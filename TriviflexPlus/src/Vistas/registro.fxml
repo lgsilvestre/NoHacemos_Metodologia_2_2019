@@ -6,12 +6,12 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="672.0" style="-fx-background-color: yellow;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Principal.Contr_registro">
+<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="1300.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_registro">
    <children>
-      <Pane prefHeight="63.0" prefWidth="672.0" style="-fx-background-color: darkorange;">
+      <Pane prefHeight="63.0" prefWidth="1300.0" style="-fx-background-color: darkorange;">
          <children>
             <ImageView fitHeight="63.0" fitWidth="115.0" pickOnBounds="true">
                <image>
@@ -20,18 +20,34 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane layoutY="398.0" prefHeight="63.0" prefWidth="672.0" style="-fx-background-color: darkorange;" />
-      <Pane layoutX="174.0" layoutY="71.0" prefHeight="47.0" prefWidth="324.0" style="-fx-background-color: white;">
+      <Pane layoutY="697.0" prefHeight="63.0" prefWidth="1300.0" style="-fx-background-color: darkorange;" />
+      <Pane layoutX="459.0" layoutY="159.0" prefHeight="47.0" prefWidth="324.0" style="-fx-background-color: white;">
          <children>
-            <Text layoutX="105.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creacion de usuario" wrappingWidth="115.0" />
+            <Text layoutX="131.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creacion de usuario" wrappingWidth="115.0">
+               <font>
+                  <Font name="Oswald Regular" size="12.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
-      <TextField layoutX="174.0" layoutY="156.0" prefHeight="25.0" prefWidth="324.0" />
-      <TextField layoutX="174.0" layoutY="218.0" prefHeight="25.0" prefWidth="324.0" />
-      <TextField layoutX="174.0" layoutY="283.0" prefHeight="25.0" prefWidth="324.0" />
-      <Text layoutX="313.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" textAlignment="CENTER" wrappingWidth="45.341796875" />
-      <Text layoutX="306.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
-      <Text layoutX="297.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validar usuario" />
-      <Button layoutX="174.0" layoutY="338.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="324.0" style="-fx-background-color: white;" text="Crear Usuario" />
+      <TextField layoutX="453.0" layoutY="295.0" prefHeight="25.0" prefWidth="324.0" />
+      <TextField layoutX="453.0" layoutY="403.0" prefHeight="25.0" prefWidth="324.0" />
+      <TextField layoutX="453.0" layoutY="517.0" prefHeight="25.0" prefWidth="324.0" />
+      <Text layoutX="592.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" textAlignment="CENTER" wrappingWidth="45.341796875">
+         <font>
+            <Font name="Oswald Regular" size="12.0" />
+         </font></Text>
+      <Text layoutX="591.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
+         <font>
+            <Font name="Oswald Regular" size="12.0" />
+         </font></Text>
+      <Text layoutX="582.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validar usuario">
+         <font>
+            <Font name="Oswald Regular" size="12.0" />
+         </font></Text>
+      <Button layoutX="453.0" layoutY="618.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="324.0" style="-fx-background-color: white;" text="Crear Usuario">
+         <font>
+            <Font name="Oswald Regular" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>

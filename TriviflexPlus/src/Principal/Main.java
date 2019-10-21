@@ -19,12 +19,13 @@ import javafx.stage.Stage;
 public class Main extends Application{
     
     public void start(Stage stage) throws Exception {
+        
         Parent  root = FXMLLoader.load(getClass().getResource("/Vistas/inicio.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setMinWidth(600);
-        stage.setMinHeight(400);
-        stage.setResizable(true);
+        stage.setMinWidth(1300);
+        stage.setMinHeight(720);
+        stage.setResizable(false);
         
         stage.show();
     }
