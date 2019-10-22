@@ -92,11 +92,11 @@
       </Pane>
       <Pane fx:id="pane" layoutX="114.0" layoutY="240.0" onMouseClicked="#repro" prefHeight="133.0" prefWidth="149.0" style="-fx-background-color: white;">
          <children>
-            <Text layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagen de la pelicula" textAlignment="CENTER" wrappingWidth="148.5078125">
-               <font>
-                  <Font name="Oswald Regular" size="12.0" />
-               </font>
-            </Text>
+            <ImageView fitHeight="133.0" fitWidth="149.0">
+               <image>
+                  <Image url="@../Recursos/10-buenardo-de-rucule-picantovich-meanwhile-in-2029-46169204.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>
