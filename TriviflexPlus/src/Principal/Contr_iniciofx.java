@@ -39,11 +39,6 @@ public class Contr_iniciofx implements Initializable  {
     private Button Nuser;
      
      
-    @FXML
-   public void cambiarPrueba(){
-       
-       SceneHandler.cargarVista(root, getClass().getResource("/Vistas/pruebaro.fxml"));
-   }
    @FXML
    public void sesion(){
        
