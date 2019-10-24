@@ -11,12 +11,17 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import static javafx.scene.media.MediaPlayer.Status.PLAYING;
 import javafx.scene.media.MediaView;
+import javafx.util.Duration;
+import static sun.audio.AudioPlayer.player;
+
 
 /**
  *
@@ -40,6 +45,27 @@ public class Contr_rpeliculas implements Initializable{
         view.toFront();
         view.setMediaPlayer(player);
         
+        
+        player.setOnReady(() -> {
+            minD.setText("0:00");
+            maxD.setText("0:00");
+            // obtener metadatos, si existen
+            media.getMetadata().forEach((k, v) -> System.out.println(k + ", " + v));
+            
+            maxD.setText(String.format("%.2f", player.getTotalDuration().toMinutes()));     
+            slide.setMax(player.getTotalDuration().toSeconds());
+            
+            slide.valueProperty().addListener((p, o, value) -> {
+                if (slide.isPressed()) {
+                    player.seek(Duration.seconds(value.doubleValue()));
+                }
+            });
+
+            player.currentTimeProperty().addListener((p, o, value) -> {
+                slide.setValue(value.toSeconds());
+                minD.setText(String.format("%.2f", value.toMinutes()));
+            });
+        });
         
     }
     @FXML
@@ -66,6 +92,12 @@ public class Contr_rpeliculas implements Initializable{
     private Button bplay;
     @FXML
     private Button bstop;
+    @FXML
+    private Label minD;
+    @FXML
+    private Label maxD;
+    @FXML
+    private Slider slide;
     
     @FXML
     public void volver(){
@@ -113,11 +145,10 @@ public class Contr_rpeliculas implements Initializable{
     public void stop(){
         player.stop();
     }
+
     /***
      * TDO
      * Actualizar con reproduccion de video
      */
-    
-    
-    
 }
+

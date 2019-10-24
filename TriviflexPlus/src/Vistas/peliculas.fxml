@@ -70,22 +70,22 @@
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Text>
-            <Pane layoutX="291.0" layoutY="235.0" prefHeight="133.0" prefWidth="149.0" style="-fx-background-color: white;">
+            <Pane layoutX="298.0" layoutY="235.0" prefHeight="133.0" prefWidth="132.0" style="-fx-background-color: white;">
                <children>
-                  <Text layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagen de la pelicula" textAlignment="CENTER" wrappingWidth="148.5078125">
-                     <font>
-                        <Font name="Oswald Regular" size="12.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="133.0" fitWidth="132.0">
+                     <image>
+                        <Image url="@../Recursos/peli2.jpg" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
-            <Pane layoutX="480.0" layoutY="235.0" prefHeight="133.0" prefWidth="149.0" style="-fx-background-color: white;">
+            <Pane layoutX="480.0" layoutY="235.0" prefHeight="133.0" prefWidth="124.0" style="-fx-background-color: white;">
                <children>
-                  <Text layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagen de la pelicula" textAlignment="CENTER" wrappingWidth="148.5078125">
-                     <font>
-                        <Font name="Oswald Regular" size="12.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="133.0" fitWidth="124.0">
+                     <image>
+                        <Image url="@../Recursos/peli3.jpg" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
          </children>
