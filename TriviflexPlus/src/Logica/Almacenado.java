@@ -10,5 +10,10 @@ package Logica;
  * @author Shipus
  */
 public class Almacenado {
+    /**
+     * Esto quedo mal estipulado en el diseño, se espera cambiar de arraylist a 
+     * listas enlazadas para almacenar de mejor manera una lista de multimedias
+     * de cada tipo y de esta manera crear un historial para cada usuario
+     */
     
 }

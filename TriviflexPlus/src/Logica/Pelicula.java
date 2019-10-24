@@ -9,6 +9,54 @@ package Logica;
  *
  * @author Shipus
  */
-public class Pelicula {
+public class Pelicula extends Multimedia{
+    boolean sub;
+    String reparto;
+
+    public Pelicula(boolean sub, String reparto, String nombre, String genero, String autor) {
+        super(nombre, genero, autor);
+        this.sub = sub;
+        this.reparto = reparto;
+    }
+
+    public boolean isSub() {
+        return sub;
+    }
+
+    public void setSub(boolean sub) {
+        this.sub = sub;
+    }
+
+    public String getReparto() {
+        return reparto;
+    }
+
+    public void setReparto(String reparto) {
+        this.reparto = reparto;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
     
 }

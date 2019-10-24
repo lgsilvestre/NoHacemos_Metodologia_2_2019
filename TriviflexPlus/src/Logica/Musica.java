@@ -9,6 +9,43 @@ package Logica;
  *
  * @author Shipus
  */
-public class Musica {
+public class Musica extends Multimedia{
+    String duracion;
+    public Musica(String nombre, String genero, String autor, String duracion) {
+        super(nombre, genero, autor);
+        this.duracion = duracion;
+    }
+
+    public String getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(String duracion) {
+        this.duracion = duracion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
     
 }
