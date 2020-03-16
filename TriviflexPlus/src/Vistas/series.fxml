@@ -63,31 +63,36 @@
             </Pane>
             <ScrollBar layoutX="1286.0" layoutY="57.0" orientation="VERTICAL" prefHeight="706.0" prefWidth="14.0" />
             <Text layoutX="80.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Series:" />
-            <Pane fx:id="pane" layoutX="80.0" layoutY="223.0" onMouseClicked="#repro" prefHeight="133.0" prefWidth="149.0" style="-fx-background-color: white;">
+            <Pane fx:id="pane" layoutX="80.0" layoutY="232.0" onMouseClicked="#repro" prefHeight="110.0" prefWidth="149.0" style="-fx-background-color: white;">
                <children>
-                  <Text layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagen de la serie" textAlignment="CENTER" wrappingWidth="148.5078125">
-                     <font>
-                        <Font name="Oswald Regular" size="12.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="117.0" fitWidth="155.0" layoutX="-3.0" layoutY="-3.0">
+                     <image>
+                        <Image url="@../Recursos/serie1.jpg" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
-            <Pane layoutX="292.0" layoutY="223.0" prefHeight="133.0" prefWidth="149.0" style="-fx-background-color: white;">
+            <Pane layoutX="292.0" layoutY="232.0" prefHeight="110.0" prefWidth="149.0" style="-fx-background-color: white;">
                <children>
-                  <Text layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagen de la serie" textAlignment="CENTER" wrappingWidth="148.5078125">
-                     <font>
-                        <Font name="Oswald Regular" size="12.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="117.0" fitWidth="162.0" layoutX="-6.0" layoutY="-3.0">
+                     <image>
+                        <Image url="@../Recursos/serie2.jpg" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
-            <Pane layoutX="491.0" layoutY="223.0" prefHeight="133.0" prefWidth="149.0" style="-fx-background-color: white;">
+            <Pane layoutX="491.0" layoutY="229.0" prefHeight="117.0" prefWidth="168.0" style="-fx-background-color: white;">
                <children>
                   <Text layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagen de la serie" textAlignment="CENTER" wrappingWidth="148.5078125">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Text>
+                  <ImageView fitHeight="117.0" fitWidth="168.0">
+                     <image>
+                        <Image url="@../Recursos/serie3.jpg" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
          </children>
