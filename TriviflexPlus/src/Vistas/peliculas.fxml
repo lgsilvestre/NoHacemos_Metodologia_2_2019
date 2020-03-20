@@ -70,7 +70,7 @@
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Text>
-            <Pane layoutX="298.0" layoutY="235.0" prefHeight="133.0" prefWidth="132.0" style="-fx-background-color: white;">
+            <Pane fx:id="pane2" layoutX="298.0" layoutY="235.0" onMouseClicked="#repro2" prefHeight="133.0" prefWidth="132.0" style="-fx-background-color: white;">
                <children>
                   <ImageView fitHeight="133.0" fitWidth="132.0">
                      <image>
@@ -90,7 +90,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane fx:id="pane" layoutX="114.0" layoutY="240.0" onMouseClicked="#repro" prefHeight="133.0" prefWidth="149.0" style="-fx-background-color: white;">
+      <Pane fx:id="pane" layoutX="114.0" layoutY="240.0" onMouseClicked="#repro1" prefHeight="133.0" prefWidth="149.0" style="-fx-background-color: white;">
          <children>
             <ImageView fitHeight="133.0" fitWidth="149.0">
                <image>
