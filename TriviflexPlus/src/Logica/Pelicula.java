@@ -12,11 +12,20 @@ package Logica;
 public class Pelicula extends Multimedia{
     boolean sub;
     String reparto;
-
-    public Pelicula(boolean sub, String reparto, String nombre, String genero, String autor) {
+    String link;
+    public Pelicula(boolean sub, String reparto, String nombre, String genero, String autor, String link) {
         super(nombre, genero, autor);
         this.sub = sub;
         this.reparto = reparto;
+        this.link=link;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
     }
 
     public boolean isSub() {

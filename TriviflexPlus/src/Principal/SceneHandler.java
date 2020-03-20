@@ -21,18 +21,21 @@ import javafx.stage.Stage;
  */
 public class SceneHandler {
         static public void cargarVista(Pane viewRoot, URL resource){
-        Stage stage = (Stage) viewRoot.getScene().getWindow();
-        Parent root = null;        
-        try {
-            root = FXMLLoader.load(resource);
-        } catch (IOException ex) {
-            System.out.println("No se puede cargar la vista " + resource.toString());
-            Logger.getLogger(SceneHandler.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        Scene scene = new Scene(root);        
-        stage.setScene(scene);
+            Stage stage = (Stage) viewRoot.getScene().getWindow();
+            Parent root = null;        
+
+            try {
+                root = FXMLLoader.load(resource);
+            } catch (IOException ex) {
+                System.out.println("No se puede cargar la vista " + resource.toString());
+                Logger.getLogger(SceneHandler.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            Scene scene = new Scene(root);        
+            stage.setScene(scene);
+
+
+
+            }
         
         
-        
-        }
 }

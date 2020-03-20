@@ -5,6 +5,8 @@
  */
 package Principal;
 
+import Logica.Pelicula;
+import static Principal.Contr_peliculas.nombrePeli;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -28,22 +30,44 @@ import static sun.audio.AudioPlayer.player;
  * @author Shipus
  */
 public class Contr_rpeliculas implements Initializable{
-
+    /***
+     * Cargar peliculas 
+     */
+    Pelicula peli1= new Pelicula(false,"o","bueno","Drama","Jeremy","no por ahora");
+    Pelicula peli2= new Pelicula(false,"o","bruh","Drama","Daniel","no por ahora");
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        File file = new File("bueno.mp4");
-        media = new Media(file.toURI().toString());
+        
+        if(nombrePeli==peli1.getNombre()){
+             File file1 = new File("bueno.mp4");
+             media = new Media(file1.toURI().toString());
+        }else{
+            if(nombrePeli==peli2.getNombre()){
+                File file1 = new File("bruh.mp4");
+                media = new Media(file1.toURI().toString());
+            }
+        }
+
+        
         media.setOnError(() -> System.out.println("error media"));
 
         player = new MediaPlayer(media);
         player.setOnError(() -> System.out.println("error player"));
         
         
+        
         if(view == null){
             view = new MediaView(player);
+            
+            
+            
+            
         }
+       
         view.toFront();
         view.setMediaPlayer(player);
+       
+       
         
         
         player.setOnReady(() -> {

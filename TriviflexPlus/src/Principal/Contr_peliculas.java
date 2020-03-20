@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
@@ -30,8 +31,15 @@ public class Contr_peliculas implements Initializable{
     private Button b5;
     @FXML
     private Pane pane;
+    
+    @FXML
+    private Pane pane2;
+    
     @FXML
     private AnchorPane root;
+    
+    static String nombrePeli = ""; 
+    
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         
@@ -58,8 +66,12 @@ public class Contr_peliculas implements Initializable{
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/busqueda.fxml"));
     }
     @FXML
-    public void repro(){
+    public void repro1(){
+        nombrePeli="bueno";
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
     }
-    
+    public void repro2(){
+        nombrePeli="bruh";
+        SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
+    }
 }
