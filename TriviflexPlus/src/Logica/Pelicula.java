@@ -5,6 +5,8 @@
  */
 package Logica;
 
+import javafx.scene.image.Image;
+
 /**
  *
  * @author Shipus
@@ -13,13 +15,23 @@ public class Pelicula extends Multimedia{
     boolean sub;
     String reparto;
     String link;
-    public Pelicula(boolean sub, String reparto, String nombre, String genero, String autor, String link) {
+    private Image imagen;
+    public Pelicula(boolean sub, String reparto, String nombre, String genero, String autor, String link, Image imagen) {
         super(nombre, genero, autor);
         this.sub = sub;
         this.reparto = reparto;
         this.link=link;
+        this.imagen=imagen;
     }
 
+    public Image getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(Image imagen) {
+        this.imagen = imagen;
+    }
+    
     public String getLink() {
         return link;
     }
