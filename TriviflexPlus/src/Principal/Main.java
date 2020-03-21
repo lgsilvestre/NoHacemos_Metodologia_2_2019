@@ -30,8 +30,6 @@ public class Main extends Application{
         Parent  root = FXMLLoader.load(getClass().getResource("/Vistas/inicio.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setMinWidth(1300);
-        stage.setMinHeight(720);
         stage.setResizable(false);
         
         stage.show();

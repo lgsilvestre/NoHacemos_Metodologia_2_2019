@@ -6,48 +6,32 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="1300.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_registro">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_registro">
    <children>
-      <Pane prefHeight="63.0" prefWidth="1300.0" style="-fx-background-color: darkorange;">
+      <Pane layoutX="278.0" layoutY="135.0" prefHeight="47.0" prefWidth="324.0" style="-fx-background-color: orange;">
          <children>
-            <ImageView fitHeight="63.0" fitWidth="115.0" pickOnBounds="true">
+            <Text layoutX="85.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creacion de usuario" wrappingWidth="155.0" />
+         </children>
+      </Pane>
+      <TextField fx:id="user" layoutX="278.0" layoutY="238.0" prefHeight="25.0" prefWidth="324.0" />
+      <TextField fx:id="pass" layoutX="278.0" layoutY="343.0" prefHeight="25.0" prefWidth="324.0" />
+      <TextField fx:id="validarPass" layoutX="278.0" layoutY="440.0" prefHeight="25.0" prefWidth="324.0" />
+      <Text layoutX="302.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" textAlignment="CENTER" wrappingWidth="81.341796875" />
+      <Text layoutX="306.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
+      <Text layoutX="306.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validar Contraseña" />
+      <Button fx:id="b1" layoutX="279.0" layoutY="542.0" mnemonicParsing="false" onAction="#Crear" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: Black;" text="Crear Usuario" textFill="WHITE" />
+      <Button fx:id="b2" layoutX="474.0" layoutY="542.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: Black;" text="Cancelar" textFill="WHITE" />
+      <Pane blendMode="SRC_ATOP" depthTest="ENABLE" layoutY="600.0" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: darkorange;" />
+      <Pane blendMode="SRC_ATOP" depthTest="ENABLE" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: darkorange;">
+         <children>
+            <ImageView fitHeight="128.0" fitWidth="230.0" layoutX="28.0" layoutY="-24.0" pickOnBounds="true">
                <image>
                   <Image url="@../Recursos/logo.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Pane layoutY="697.0" prefHeight="63.0" prefWidth="1300.0" style="-fx-background-color: darkorange;" />
-      <Pane layoutX="459.0" layoutY="159.0" prefHeight="47.0" prefWidth="324.0" style="-fx-background-color: white;">
-         <children>
-            <Text layoutX="131.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creacion de usuario" wrappingWidth="115.0">
-               <font>
-                  <Font name="Oswald Regular" size="12.0" />
-               </font>
-            </Text>
-         </children>
-      </Pane>
-      <TextField layoutX="453.0" layoutY="295.0" prefHeight="25.0" prefWidth="324.0" />
-      <TextField layoutX="453.0" layoutY="403.0" prefHeight="25.0" prefWidth="324.0" />
-      <TextField layoutX="453.0" layoutY="517.0" prefHeight="25.0" prefWidth="324.0" />
-      <Text layoutX="592.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" textAlignment="CENTER" wrappingWidth="45.341796875">
-         <font>
-            <Font name="Oswald Regular" size="12.0" />
-         </font></Text>
-      <Text layoutX="591.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña">
-         <font>
-            <Font name="Oswald Regular" size="12.0" />
-         </font></Text>
-      <Text layoutX="582.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validar usuario">
-         <font>
-            <Font name="Oswald Regular" size="12.0" />
-         </font></Text>
-      <Button layoutX="453.0" layoutY="618.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="324.0" style="-fx-background-color: white;" text="Crear Usuario">
-         <font>
-            <Font name="Oswald Regular" size="12.0" />
-         </font></Button>
    </children>
 </AnchorPane>
