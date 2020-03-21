@@ -5,6 +5,8 @@
  */
 package Principal;
 
+import Logica.Usuario;
+import java.util.ArrayList;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -18,8 +20,13 @@ import javafx.stage.Stage;
  */
 public class Main extends Application{
     
+    public static ArrayList<Usuario> registrados = new ArrayList<>();
+    
     public void start(Stage stage) throws Exception {
-        
+        Usuario user1 = new Usuario("Jeremy", "1234");
+        Usuario user2 = new Usuario("Shipus", "arroz");
+        registrados.add(user1);
+        registrados.add(user2);
         Parent  root = FXMLLoader.load(getClass().getResource("/Vistas/inicio.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
