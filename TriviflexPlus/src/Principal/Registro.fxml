@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_registro">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_registro">
    <children>
       <Pane layoutX="278.0" layoutY="135.0" prefHeight="47.0" prefWidth="324.0" style="-fx-background-color: orange;">
          <children>
@@ -21,8 +21,8 @@
       <Text layoutX="302.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" textAlignment="CENTER" wrappingWidth="81.341796875" />
       <Text layoutX="306.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
       <Text layoutX="306.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validar usuario" />
-      <Button fx:id="b1" layoutX="279.0" layoutY="542.0" mnemonicParsing="false" onAction="#Crear" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: white;" text="Crear Usuario" />
-      <Button fx:id="b2" layoutX="474.0" layoutY="542.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: white;" text="Cancelar" />
+      <Button fx:id="b1" layoutX="279.0" layoutY="542.0" mnemonicParsing="false" onAction="#Crear" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: Black;" text="Crear Usuario" textFill="WHITE" />
+      <Button fx:id="b2" layoutX="474.0" layoutY="542.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: Black;" text="Cancelar" textFill="WHITE" />
       <Pane blendMode="SRC_ATOP" depthTest="ENABLE" layoutY="600.0" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: darkorange;" />
       <Pane blendMode="SRC_ATOP" depthTest="ENABLE" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: darkorange;">
          <children>
