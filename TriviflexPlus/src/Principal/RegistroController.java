@@ -13,11 +13,12 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 
 /**
+ * FXML Controller class
  *
- * @author Shipus
+ * @author jralb
  */
-public class Contr_registro implements Initializable{
-    
+public class RegistroController implements Initializable {
+
     @FXML
     private AnchorPane root;
     @FXML
