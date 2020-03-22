@@ -35,6 +35,16 @@ public class Contr_rpeliculas implements Initializable{
      */
     Pelicula peli1= new Pelicula(false,"o","bueno","Drama","Jeremy","no por ahora");
     Pelicula peli2= new Pelicula(false,"o","bruh","Drama","Daniel","no por ahora");
+    @FXML
+    private Button b51;
+    @FXML
+    private Button b11;
+    @FXML
+    private Button b111;
+    @FXML
+    private Button b112;
+    @FXML
+    private Button b113;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         
@@ -92,24 +102,10 @@ public class Contr_rpeliculas implements Initializable{
         });
         
     }
-    @FXML
     private Media media;
-    @FXML
     private MediaPlayer player;
     @FXML
     private AnchorPane root;
-    @FXML
-    private Pane pane;
-    @FXML
-    private Button b1;
-    @FXML
-    private Button b2;
-    @FXML
-    private Button b3;
-    @FXML
-    private Button b4;
-    @FXML
-    private Button b5;
     @FXML
     private MediaView view;
     @FXML

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -10,49 +9,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="root" prefHeight="760.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_series">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="693.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_series">
    <children>
-      <Pane layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1300.0" style="-fx-background-color: yellow;">
+      <Pane layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: yellow;">
          <children>
-            <Pane layoutY="-7.0" prefHeight="64.0" prefWidth="1300.0" style="-fx-background-color: darkorange;">
-               <children>
-                  <Button fx:id="b5" layoutX="636.0" layoutY="19.0" mnemonicParsing="false" onAction="#buscar" prefHeight="25.0" prefWidth="34.0">
-                     <graphic>
-                        <ImageView fitHeight="27.0" fitWidth="34.0">
-                           <image>
-                              <Image url="@../Recursos/search.png" />
-                           </image>
-                        </ImageView>
-                     </graphic></Button>
-                  <ImageView fitHeight="55.0" fitWidth="115.0" layoutX="7.0" layoutY="5.0" pickOnBounds="true">
-                     <image>
-                        <Image url="@../Recursos/logo.png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="b1" layoutX="189.0" layoutY="20.0" mnemonicParsing="false" onAction="#volver" text="INICIO">
-                     <font>
-                        <Font name="Oswald Regular" size="12.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="b2" layoutX="251.0" layoutY="21.0" mnemonicParsing="false" onAction="#peliculas" text="Peliculas" />
-                  <Button fx:id="b3" layoutX="333.0" layoutY="21.0" mnemonicParsing="false" onAction="#series" text="Series">
-                     <font>
-                        <Font name="Oswald Regular" size="12.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="b4" layoutX="398.0" layoutY="21.0" mnemonicParsing="false" onAction="#musica" text="Musica">
-                     <font>
-                        <Font name="Oswald Regular" size="12.0" />
-                     </font>
-                  </Button>
-                  <TextField layoutX="509.0" layoutY="20.0" promptText="buscar">
-                     <font>
-                        <Font name="Oswald Regular" size="12.0" />
-                     </font>
-                  </TextField>
-               </children>
-            </Pane>
-            <Pane layoutX="491.0" layoutY="88.0" prefHeight="55.0" prefWidth="353.0" style="-fx-background-color: darkorange;">
+            <Pane layoutX="238.0" layoutY="94.0" prefHeight="55.0" prefWidth="353.0" style="-fx-background-color: darkorange;">
                <children>
                   <Text layoutX="102.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sugerencias" textAlignment="CENTER" wrappingWidth="148.5078125">
                      <font>
@@ -61,27 +22,25 @@
                   </Text>
                </children>
             </Pane>
-            <ScrollBar layoutX="1286.0" layoutY="57.0" orientation="VERTICAL" prefHeight="706.0" prefWidth="14.0" />
-            <Text layoutX="80.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Series:" />
-            <Pane fx:id="pane" layoutX="80.0" layoutY="232.0" onMouseClicked="#repro" prefHeight="110.0" prefWidth="149.0" style="-fx-background-color: white;">
+            <Pane fx:id="pane" layoutX="80.0" layoutY="276.0" onMouseClicked="#repro" prefHeight="110.0" prefWidth="149.0" style="-fx-background-color: white;">
                <children>
-                  <ImageView fitHeight="117.0" fitWidth="155.0" layoutX="-3.0" layoutY="-3.0">
+                  <ImageView fitHeight="117.0" fitWidth="155.0" layoutX="-3.0">
                      <image>
                         <Image url="@../Recursos/serie1.jpg" />
                      </image>
                   </ImageView>
                </children>
             </Pane>
-            <Pane layoutX="292.0" layoutY="232.0" prefHeight="110.0" prefWidth="149.0" style="-fx-background-color: white;">
+            <Pane layoutX="292.0" layoutY="277.0" prefHeight="110.0" prefWidth="149.0" style="-fx-background-color: white;">
                <children>
-                  <ImageView fitHeight="117.0" fitWidth="162.0" layoutX="-6.0" layoutY="-3.0">
+                  <ImageView fitHeight="117.0" fitWidth="162.0" layoutX="-6.0">
                      <image>
                         <Image url="@../Recursos/serie2.jpg" />
                      </image>
                   </ImageView>
                </children>
             </Pane>
-            <Pane layoutX="491.0" layoutY="229.0" prefHeight="117.0" prefWidth="168.0" style="-fx-background-color: white;">
+            <Pane layoutX="491.0" layoutY="277.0" prefHeight="117.0" prefWidth="168.0" style="-fx-background-color: white;">
                <children>
                   <Text layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagen de la serie" textAlignment="CENTER" wrappingWidth="148.5078125">
                      <font>
@@ -95,6 +54,58 @@
                   </ImageView>
                </children>
             </Pane>
+            <Pane layoutX="13.0" layoutY="218.0" prefHeight="45.0" prefWidth="884.0" style="-fx-background-color: Black;">
+               <children>
+                  <Text fill="WHITE" layoutX="39.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Series:" wrappingWidth="66.12158203125">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane prefHeight="84.0" prefWidth="921.0" style="-fx-background-color: darkorange; -fx-border-color: Black;">
+         <children>
+            <Button fx:id="b51" layoutX="856.0" layoutY="25.0" mnemonicParsing="false" onAction="#buscar" prefHeight="45.0" prefWidth="45.0">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="34.0">
+                     <image>
+                        <Image url="@../Recursos/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="107.0" fitWidth="213.0" layoutX="2.0" layoutY="-16.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Recursos/logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b11" layoutX="240.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Inicio">
+               <font>
+                  <Font name="Oswald Regular" size="12.0" />
+               </font>
+            </Button>
+            <TextField layoutX="695.0" layoutY="25.0" prefHeight="45.0" prefWidth="149.0" promptText="buscar">
+               <font>
+                  <Font name="Oswald Regular" size="12.0" />
+               </font>
+            </TextField>
+            <Button fx:id="b111" layoutX="543.0" layoutY="25.0" mnemonicParsing="false" onAction="#musica" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Música">
+               <font>
+                  <Font name="Oswald Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="b112" layoutX="442.0" layoutY="25.0" mnemonicParsing="false" onAction="#series" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Series">
+               <font>
+                  <Font name="Oswald Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="b113" layoutX="340.0" layoutY="25.0" mnemonicParsing="false" onAction="#peliculas" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Peliculas">
+               <font>
+                  <Font name="Oswald Regular" size="12.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

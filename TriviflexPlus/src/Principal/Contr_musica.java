@@ -7,6 +7,7 @@ package Principal;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -19,31 +20,31 @@ import javafx.scene.layout.Pane;
  */
 public class Contr_musica implements Initializable {
 
+    @FXML
+    private Button b51;
+    @FXML
+    private Button b11;
+    @FXML
+    private Button b111;
+    @FXML
+    private Button b112;
+    @FXML
+    private Button b113;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
     }
-    @FXML
-    private Button b1;
-    @FXML
-    private Button b2;
-    @FXML
-    private Button b3;
-    @FXML
-    private Button b4;
-    @FXML
-    private Button b5;
     @FXML
     private Pane pane;
     @FXML
     private AnchorPane root;
     
     @FXML
-    public void inicio(){
+    public void volver(){
      
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/principal.fxml"));
     }
     @FXML
-    public void music(){
+    public void musica(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/musica.fxml"));
     }
     @FXML
@@ -51,7 +52,7 @@ public class Contr_musica implements Initializable {
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/series.fxml"));
     }
     @FXML
-    public void pelis(){
+    public void peliculas(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/peliculas.fxml"));
     }
     @FXML
@@ -62,6 +63,7 @@ public class Contr_musica implements Initializable {
     public void repro(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rmusica.fxml"));
     }
+
     
     
 }

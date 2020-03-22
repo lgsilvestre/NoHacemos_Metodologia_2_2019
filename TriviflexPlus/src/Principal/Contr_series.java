@@ -23,15 +23,19 @@ public class Contr_series implements Initializable{
     @FXML
     private Pane pane;
     @FXML
-    private Button b1;
+    private Button b51;
     @FXML
-    private Button b2;
+    private Button b11;
     @FXML
-    private Button b3;
+    private Button b111;
     @FXML
-    private Button b4;
+    private Button b112;
     @FXML
-    private Button b5;
+    private Button b113;
+    
+    
+    
+    
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {

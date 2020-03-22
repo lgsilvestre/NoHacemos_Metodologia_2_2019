@@ -25,8 +25,6 @@ public class Contr_rseries implements Initializable{
     @FXML
     private AnchorPane root;
     @FXML
-    private Pane pane;
-    @FXML
     private Button b1;
     @FXML
     private Button b2;
@@ -46,11 +44,9 @@ public class Contr_rseries implements Initializable{
     public void buscar(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/busqueda.fxml"));
     }
-    @FXML
     public void peliculas(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/peliculas.fxml"));
     }
-    @FXML
     public void series(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/series.fxml"));
     }
