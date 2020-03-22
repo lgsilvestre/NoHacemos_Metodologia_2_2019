@@ -50,7 +50,7 @@ public class Contr_rpeliculas implements Initializable{
         
         if(nombrePeli==peli1.getNombre()){
              File file1 = new File("bueno.mp4");
-             media = new Media(file1.toURI().toString());
+             media = new Media("https://dl.dropboxusercontent.com/s/ahks83j8ujvzoyl/Hatsune%20miku%20cover.%20Julieta%20venegas%20-%20Lento.mp3");
         }else{
             if(nombrePeli==peli2.getNombre()){
                 File file1 = new File("bruh.mp4");
