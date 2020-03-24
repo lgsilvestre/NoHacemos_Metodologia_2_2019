@@ -10,13 +10,13 @@ package Logica;
  * @author Shipus
  */
 public class Pelicula extends Multimedia{
-    boolean sub;
-    String reparto;
+    String sub;
+   
     String link;
-    public Pelicula(boolean sub, String reparto, String nombre, String genero, String autor, String link) {
+    public Pelicula(String sub, String nombre, String genero, String autor, String link) {
         super(nombre, genero, autor);
         this.sub = sub;
-        this.reparto = reparto;
+        
         this.link=link;
     }
 
@@ -28,21 +28,15 @@ public class Pelicula extends Multimedia{
         this.link = link;
     }
 
-    public boolean isSub() {
+    public String isSub() {
         return sub;
     }
 
-    public void setSub(boolean sub) {
+    public void setSub(String sub) {
         this.sub = sub;
     }
 
-    public String getReparto() {
-        return reparto;
-    }
 
-    public void setReparto(String reparto) {
-        this.reparto = reparto;
-    }
 
     public String getNombre() {
         return nombre;

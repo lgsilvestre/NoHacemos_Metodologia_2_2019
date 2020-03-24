@@ -5,6 +5,7 @@
  */
 package Principal;
 
+import static Principal.Main.peliculas;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -65,14 +66,19 @@ public class Contr_peliculas implements Initializable{
     public void buscar(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/busqueda.fxml"));
     }
+    /**
+     * Como en esta parte se "elige" la pelicula le cambiamos el nombre a nuestro
+     * nombre estatico de modo que sea posible distinguir en las demas ventanas la eleccion
+     * del usuario
+     */
     @FXML
     public void repro1(){
-        nombrePeli="bueno";
+        nombrePeli=peliculas.get(0).getNombre();
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
     }
     @FXML
     public void repro2(){
-        nombrePeli="bruh";
+        nombrePeli=peliculas.get(1).getNombre();
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
     }
 

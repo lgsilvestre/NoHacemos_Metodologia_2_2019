@@ -11,9 +11,19 @@ package Logica;
  */
 public class Musica extends Multimedia{
     String duracion;
-    public Musica(String nombre, String genero, String autor, String duracion) {
+    String link;
+    public Musica(String nombre, String genero, String autor, String duracion, String link) {
         super(nombre, genero, autor);
         this.duracion = duracion;
+        this.link=link;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
     }
 
     public String getDuracion() {

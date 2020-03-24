@@ -7,6 +7,7 @@ package Principal;
 
 import Logica.Pelicula;
 import static Principal.Contr_peliculas.nombrePeli;
+import static Principal.Main.peliculas;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -33,8 +34,7 @@ public class Contr_rpeliculas implements Initializable{
     /***
      * Cargar peliculas 
      */
-    Pelicula peli1= new Pelicula(false,"o","bueno","Drama","Jeremy","no por ahora");
-    Pelicula peli2= new Pelicula(false,"o","bruh","Drama","Daniel","no por ahora");
+    
     @FXML
     private Button b51;
     @FXML
@@ -47,14 +47,13 @@ public class Contr_rpeliculas implements Initializable{
     private Button b113;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        
-        if(nombrePeli==peli1.getNombre()){
-             File file1 = new File("bueno.mp4");
-             media = new Media("https://dl.dropboxusercontent.com/s/ahks83j8ujvzoyl/Hatsune%20miku%20cover.%20Julieta%20venegas%20-%20Lento.mp3");
-        }else{
-            if(nombrePeli==peli2.getNombre()){
-                File file1 = new File("bruh.mp4");
-                media = new Media(file1.toURI().toString());
+        /**
+         * Hacemos esto para identificar nuevamente la eleccion del usuario
+         * de este modo se podran cargar los datos restantes 
+         */
+       for (int i = 0; i < peliculas.size(); i++) {
+            if(nombrePeli==peliculas.get(i).getNombre()){
+                media = new Media(peliculas.get(i).getLink());
             }
         }
 
@@ -68,19 +67,24 @@ public class Contr_rpeliculas implements Initializable{
         
         if(view == null){
             view = new MediaView(player);
-            
-            
-            
+            view.setFitHeight(600);
+            view.setFitWidth(1200);
+            view.setPreserveRatio(false);
+           
             
         }
        
         view.toFront();
+        
+        
+       
         view.setMediaPlayer(player);
        
        
         
         
         player.setOnReady(() -> {
+            
             minD.setText("0:00");
             maxD.setText("0:00");
             // obtener metadatos, si existen

@@ -5,6 +5,8 @@
  */
 package Logica;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Shipus
@@ -16,23 +18,34 @@ package Logica;
  * 
  */
 public class Serie extends Multimedia{
-    String reparto;
+    
     String temporada;
-    boolean sub;
+    String sub;
+    String link;
+    String Ncapitulo;
 
-    public Serie(String reparto, String temporada, boolean sub, String nombre, String genero, String autor) {
+    public Serie( String sub, String Ncapitulo, String genero, String autor,String link,String temporada, String nombre) {
         super(nombre, genero, autor);
-        this.reparto = reparto;
+        this.Ncapitulo=Ncapitulo;
         this.temporada = temporada;
         this.sub = sub;
+        this.link=link;
     }
 
-    public String getReparto() {
-        return reparto;
+    public String getLink() {
+        return link;
     }
 
-    public void setReparto(String reparto) {
-        this.reparto = reparto;
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String getNcapitulo() {
+        return Ncapitulo;
+    }
+
+    public void setNcapitulo(String Ncapitulo) {
+        this.Ncapitulo = Ncapitulo;
     }
 
     public String getTemporada() {
@@ -43,11 +56,11 @@ public class Serie extends Multimedia{
         this.temporada = temporada;
     }
 
-    public boolean isSub() {
+    public String isSub() {
         return sub;
     }
 
-    public void setSub(boolean sub) {
+    public void setSub(String sub) {
         this.sub = sub;
     }
 
@@ -74,11 +87,6 @@ public class Serie extends Multimedia{
     public void setAutor(String autor) {
         this.autor = autor;
     }
-    /**
-     * Queda vacio por el momento, se espera que este busque las temporadas 
-     * relacionadas a esta serie
-     */
-    public void buscarTemporadas(){
-    }
+
     
 }
