@@ -91,10 +91,14 @@ public class Main extends Application{
          * 5.- link
          */
         
-        Musica cancion1 = new Musica("","","","","");
-        Musica cancion2 = new Musica("","","","","");
+        Musica cancion1 = new Musica("Megalovania","Videojuego","Toby Fox","5:13","https://dl.dropboxusercontent.com/s/mm2zi6lyvq3s7cv/Undertale-%20Megalovania.mp3");
+        Musica cancion2 = new Musica("Green Hill Zone","Videojuego","Masato Nakamura","2:21","https://dl.dropboxusercontent.com/s/hk3918s5lgqy8cg/Sonic%20The%20Hedgehog%20OST%20-%20Green%20Hill%20Zone.mp3");
+        Musica cancion3 = new Musica("Chemical Plant Zone","Videojuego","Masato Nakamura","2:11","https://dl.dropboxusercontent.com/s/sygm3x7cravouya/Sonic%202%20Music%20Chemical%20Plant%20Zone.mp3");
+        Musica cancion4 = new Musica("Gerudo Valley","Videojuego","Kōji Kondō","2:55","https://dl.dropboxusercontent.com/s/srkqxin59eh5vk0/Gerudo%20Valley%20-%20The%20Legend%20of%20Zelda%20Ocarina%20Of%20Time.mp3");
         canciones.add(cancion1);
         canciones.add(cancion2);
+        canciones.add(cancion3);
+        canciones.add(cancion4);
         
         Usuario user1 = new Usuario("Jeremy", "1234");
         Usuario user2 = new Usuario("Shipus", "arroz");
