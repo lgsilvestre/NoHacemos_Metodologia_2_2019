@@ -5,8 +5,10 @@
  */
 package Principal;
 
+import static Principal.Main.peliculas;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -20,16 +22,6 @@ import javafx.scene.layout.Pane;
  */
 public class Contr_peliculas implements Initializable{
     @FXML
-    private Button b1;
-    @FXML
-    private Button b2;
-    @FXML
-    private Button b3;
-    @FXML
-    private Button b4;
-    @FXML
-    private Button b5;
-    @FXML
     private Pane pane;
     
     @FXML
@@ -39,39 +31,59 @@ public class Contr_peliculas implements Initializable{
     private AnchorPane root;
     
     static String nombrePeli = ""; 
+    @FXML
+    private Button b51;
+    @FXML
+    private Button b11;
+    @FXML
+    private Button b111;
+    @FXML
+    private Button b112;
+    @FXML
+    private Button b113;
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         
     }
     @FXML
-    public void inicio(){
+    public void volver(){
      
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/principal.fxml"));
     }
     @FXML
-    public void music(){
+    public void musica(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/musica.fxml"));
     }
     @FXML
     public void series(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/series.fxml"));
     }
-    @FXML
-    public void pelis(){
+    public void pelisas(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/peliculas.fxml"));
     }
     @FXML
     public void buscar(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/busqueda.fxml"));
     }
+    /**
+     * Como en esta parte se "elige" la pelicula le cambiamos el nombre a nuestro
+     * nombre estatico de modo que sea posible distinguir en las demas ventanas la eleccion
+     * del usuario
+     */
     @FXML
     public void repro1(){
-        nombrePeli="bueno";
+        nombrePeli=peliculas.get(0).getNombre();
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
     }
+    @FXML
     public void repro2(){
-        nombrePeli="bruh";
+        nombrePeli=peliculas.get(1).getNombre();
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
+    }
+
+
+    @FXML
+    private void peliculas(ActionEvent event) {
     }
 }

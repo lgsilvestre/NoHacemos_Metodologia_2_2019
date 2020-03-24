@@ -7,21 +7,15 @@ package Principal;
 
 import Logica.Pelicula;
 import static Principal.Contr_peliculas.nombrePeli;
+import static Principal.Main.peliculas;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
-import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.media.Media;
@@ -40,38 +34,26 @@ public class Contr_rpeliculas implements Initializable{
     /***
      * Cargar peliculas 
      */
-    Pelicula peli1= new Pelicula(false,"o","bueno","Drama","Jeremy","no por ahora",null);
-    Pelicula peli2= new Pelicula(false,"o","bruh","Drama","Daniel","no por ahora",null);
     
-    
+    @FXML
+    private Button b51;
+    @FXML
+    private Button b11;
+    @FXML
+    private Button b111;
+    @FXML
+    private Button b112;
+    @FXML
+    private Button b113;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        
-        if(nombrePeli==peli1.getNombre()){
-            File file1 = new File("bueno.mp4");
-            media = new Media(file1.toURI().toString());
-            nombreP.setText(peli1.getNombre());
-            nombreG.setText(peli1.getGenero());
-            nombreA.setText(peli1.getAutor());
-            Image imagen = new Image("file:src/Recursos/10-buenardo-de-rucule-picantovich-meanwhile-in-2029-46169204.png"); 
-            imagenP.setImage(imagen);
-           
-          
-           
-            
-             
-             
-             
-        }else{
-            if(nombrePeli==peli2.getNombre()){
-                File file1 = new File("bruh.mp4");
-                media = new Media(file1.toURI().toString());
-                nombreP.setText(peli1.getNombre());
-                nombreG.setText(peli1.getGenero());
-                nombreA.setText(peli1.getAutor());
-                
-                
-                
+        /**
+         * Hacemos esto para identificar nuevamente la eleccion del usuario
+         * de este modo se podran cargar los datos restantes 
+         */
+       for (int i = 0; i < peliculas.size(); i++) {
+            if(nombrePeli==peliculas.get(i).getNombre()){
+                media = new Media(peliculas.get(i).getLink());
             }
         }
 
@@ -85,19 +67,24 @@ public class Contr_rpeliculas implements Initializable{
         
         if(view == null){
             view = new MediaView(player);
-            
-            
-            
+            view.setFitHeight(600);
+            view.setFitWidth(1200);
+            view.setPreserveRatio(false);
+           
             
         }
        
         view.toFront();
+        
+        
+       
         view.setMediaPlayer(player);
        
        
         
         
         player.setOnReady(() -> {
+            
             minD.setText("0:00");
             maxD.setText("0:00");
             // obtener metadatos, si existen
@@ -119,24 +106,10 @@ public class Contr_rpeliculas implements Initializable{
         });
         
     }
-    @FXML
     private Media media;
-    @FXML
     private MediaPlayer player;
     @FXML
     private AnchorPane root;
-    @FXML
-    private Pane pane;
-    @FXML
-    private Button b1;
-    @FXML
-    private Button b2;
-    @FXML
-    private Button b3;
-    @FXML
-    private Button b4;
-    @FXML
-    private Button b5;
     @FXML
     private MediaView view;
     @FXML
@@ -149,14 +122,6 @@ public class Contr_rpeliculas implements Initializable{
     private Label maxD;
     @FXML
     private Slider slide;
-    @FXML
-    private Label nombreP;
-    @FXML
-    private Label nombreG;
-    @FXML
-    private Label nombreA;
-    @FXML
-    private ImageView imagenP;
     
     @FXML
     public void volver(){

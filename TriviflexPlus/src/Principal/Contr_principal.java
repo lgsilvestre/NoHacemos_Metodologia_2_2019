@@ -20,15 +20,15 @@ public class Contr_principal implements Initializable{
     @FXML
     private AnchorPane root;
     @FXML
-    private Button b1;
+    private Button b51;
     @FXML
-    private Button b2;
+    private Button b11;
     @FXML
-    private Button b3;
+    private Button b111;
     @FXML
-    private Button b4;
+    private Button b112;
     @FXML
-    private Button b5;
+    private Button b113;
     @FXML
     public void volver(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/principal.fxml"));
@@ -49,6 +49,10 @@ public class Contr_principal implements Initializable{
     public void musica(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/musica.fxml"));
     }   
+    public void salir(){
+        SceneHandler.cargarVista(root, getClass().getResource("/Vistas/inicio.fxml"));
+
+    }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         
