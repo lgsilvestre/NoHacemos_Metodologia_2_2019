@@ -111,8 +111,6 @@ public class Contr_rpeliculas implements Initializable{
     @FXML
     private AnchorPane root;
     @FXML
-    private MediaView view;
-    @FXML
     private Button bplay;
     @FXML
     private Button bstop;
@@ -120,6 +118,9 @@ public class Contr_rpeliculas implements Initializable{
     private Label minD;
     @FXML
     private Label maxD;
+    @FXML
+    private MediaView view;
+
     @FXML
     private Slider slide;
     

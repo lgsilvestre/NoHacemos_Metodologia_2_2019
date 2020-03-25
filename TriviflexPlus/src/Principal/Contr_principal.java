@@ -48,7 +48,8 @@ public class Contr_principal implements Initializable{
     @FXML
     public void musica(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/musica.fxml"));
-    }   
+    } 
+    @FXML
     public void salir(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/inicio.fxml"));
 

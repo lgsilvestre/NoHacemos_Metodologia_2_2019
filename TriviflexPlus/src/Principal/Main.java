@@ -59,22 +59,22 @@ public class Main extends Application{
          * 6.- temporada
          * 7.- nombre de la serie
          */
-        Serie cap1S1= new Serie("Subtitulada al español","Dio el invasor","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2001.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood");
-        Serie cap2S1= new Serie("Subtitulada al español","Una carta del pasado","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2002.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood");
-        Serie cap3S1= new Serie("Subtitulada al español","Juventud con Dio","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2003.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood");
-        Serie cap4S1= new Serie("Subtitulada al español","Overdrive","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2004.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood");
-        Serie cap5S1= new Serie("Subtitulada al español","Los caballeros oscuros","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2005.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood");
+        Serie cap1S1= new Serie("Subtitulada al español","Capitulo 1: Dio el invasor","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2001.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood",1);
+        Serie cap2S1= new Serie("Subtitulada al español","Capitulo 2:Una carta del pasado","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2002.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood",2);
+        Serie cap3S1= new Serie("Subtitulada al español","Capitulo 3:Juventud con Dio","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2003.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood",3);
+        Serie cap4S1= new Serie("Subtitulada al español","Capitulo 4:Overdrive","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2004.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood",4);
+        Serie cap5S1= new Serie("Subtitulada al español","Capitulo 5:Los caballeros oscuros","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2005.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood",5);
         serie1.add(cap1S1);
         serie1.add(cap2S1);
         serie1.add(cap3S1);
         serie1.add(cap4S1);
         serie1.add(cap5S1);
         
-        Serie cap1S2= new Serie("Subtitulada al español","Un Hombre Poseído por un Espíritu Maligno","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%203%20-%2001.mp4","temporada 3","Jojos Bizarre Adventure: Stardust Crusaders");
-        Serie cap2S2= new Serie("Subtitulada al español","¿¡Quien Será el Juez!?","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%203%20-%2002.mp4","temporada 3","Jojos Bizarre Adventure: Stardust Crusaders");
-        Serie cap3S2= new Serie("Subtitulada al español","La Maldición de DIO","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%203%20-%2003.mp4","temporada 3","Jojos Bizarre Adventure: Stardust Crusaders");
-        Serie cap4S2= new Serie("Subtitulada al español","Tower of Gray","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%203%20-%2004.mp4","temporada 3","Jojos Bizarre Adventure: Stardust Crusaders");
-        Serie cap5S2= new Serie("Subtitulada al español","Silver Chariot","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%203%20-%2005.mp4","temporada 3","Jojos Bizarre Adventure: Stardust Crusaders");
+        Serie cap1S2= new Serie("Subtitulada al español","Capitulo 1:Un Hombre Poseído por un Espíritu Maligno","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%203%20-%2001.mp4","temporada 3","Jojos Bizarre Adventure: Stardust Crusaders",1);
+        Serie cap2S2= new Serie("Subtitulada al español","Capitulo 2:¿¡Quien Será el Juez!?","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%203%20-%2002.mp4","temporada 3","Jojos Bizarre Adventure: Stardust Crusaders",2);
+        Serie cap3S2= new Serie("Subtitulada al español","Capitulo 3:La Maldición de DIO","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%203%20-%2003.mp4","temporada 3","Jojos Bizarre Adventure: Stardust Crusaders",3);
+        Serie cap4S2= new Serie("Subtitulada al español","Capitulo 4:Tower of Gray","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%203%20-%2004.mp4","temporada 3","Jojos Bizarre Adventure: Stardust Crusaders",4);
+        Serie cap5S2= new Serie("Subtitulada al español","Capitulo 5:Silver Chariot","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%203%20-%2005.mp4","temporada 3","Jojos Bizarre Adventure: Stardust Crusaders",5);
         serie2.add(cap1S2);
         serie2.add(cap2S2);
         serie2.add(cap3S2);
