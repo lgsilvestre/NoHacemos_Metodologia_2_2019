@@ -12,9 +12,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="root" prefHeight="630.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_rseries">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="630.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_rseries">
    <children>
-      <Pane layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1020.0" style="-fx-background-color: yellow;">
+      <Pane layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1020.0" style="-fx-background-color: fdbe20;">
          <children>
             <Pane layoutX="236.0" layoutY="113.0" prefHeight="133.0" prefWidth="739.0" style="-fx-background-color: darkorange;">
                <children>
@@ -84,7 +84,7 @@
                   </Text>
                </children>
             </Pane>
-            <Pane layoutY="-5.0" prefHeight="84.0" prefWidth="1020.0" style="-fx-background-color: darkorange; -fx-border-color: Black;">
+            <Pane layoutY="-5.0" prefHeight="84.0" prefWidth="1020.0" style="-fx-background-color: black; -fx-border-color: Black;">
                <children>
                   <Button fx:id="b5" layoutX="856.0" layoutY="25.0" mnemonicParsing="false" onAction="#buscar" prefHeight="45.0" prefWidth="45.0">
                      <graphic>
@@ -95,12 +95,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <ImageView fitHeight="107.0" fitWidth="213.0" layoutX="2.0" layoutY="-16.0" pickOnBounds="true">
-                     <image>
-                        <Image url="@../Recursos/logo.png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="b1" layoutX="240.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Inicio">
+                  <Button fx:id="b1" layoutX="240.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Inicio" textFill="WHITE">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
@@ -110,17 +105,17 @@
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </TextField>
-                  <Button fx:id="b4" layoutX="543.0" layoutY="25.0" mnemonicParsing="false" onAction="#musica" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Música">
+                  <Button fx:id="b4" layoutX="543.0" layoutY="25.0" mnemonicParsing="false" onAction="#musica" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Música" textFill="WHITE">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="b3" layoutX="442.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Series">
+                  <Button fx:id="b3" layoutX="442.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Series" textFill="WHITE">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="b2" layoutX="340.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Peliculas">
+                  <Button fx:id="b2" layoutX="340.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Peliculas" textFill="WHITE">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
@@ -173,5 +168,10 @@
             </Label>
          </children>
       </Pane>
+      <ImageView fitHeight="147.0" fitWidth="235.0" layoutX="15.0" layoutY="-21.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Recursos/logo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

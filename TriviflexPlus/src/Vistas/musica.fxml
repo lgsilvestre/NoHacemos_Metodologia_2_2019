@@ -13,48 +13,76 @@
 
 <AnchorPane id="AnchorPane" fx:id="root" prefHeight="693.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_musica">
    <children>
-      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: yellow;">
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: fdbe20;">
          <children>
-            <Pane layoutX="244.0" layoutY="98.0" prefHeight="55.0" prefWidth="353.0" style="-fx-background-color: darkorange;">
+            <Pane layoutX="183.0" layoutY="101.0" prefHeight="130.0" prefWidth="556.0" style="-fx-background-color: darkorange;">
                <children>
-                  <Text layoutX="102.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sugerencias" textAlignment="CENTER" wrappingWidth="148.5078125">
-                     <font>
-                        <Font name="Oswald Regular" size="12.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="130.0" fitWidth="556.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Recursos/Banner-Undertale-Hearts-1024x576.jpg" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
-            <TableView layoutX="221.0" layoutY="283.0" prefHeight="82.0" prefWidth="253.0">
+            <TableView layoutX="192.0" layoutY="324.0" prefHeight="82.0" prefWidth="253.0">
                <columns>
                   <TableColumn prefWidth="252.0" text="Descripcion:" />
                </columns>
             </TableView>
-            <TableView layoutX="222.0" layoutY="412.0" prefHeight="82.0" prefWidth="253.0">
+            <TableView layoutX="192.0" layoutY="506.0" prefHeight="82.0" prefWidth="253.0">
                <columns>
                   <TableColumn prefWidth="252.0" text="Descripcion:" />
                </columns>
             </TableView>
-            <Pane fx:id="pane" layoutX="71.0" layoutY="276.0" onMouseClicked="#repro" prefHeight="106.0" prefWidth="115.0" style="-fx-background-color: white;">
+            <Pane fx:id="pane" layoutX="52.0" layoutY="312.0" onMouseClicked="#repro" prefHeight="106.0" prefWidth="115.0" style="-fx-background-color: black;">
                <children>
-                  <Text layoutX="-17.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="imagen " textAlignment="CENTER" wrappingWidth="148.5078125">
-                     <font>
-                        <Font name="Oswald Regular" size="12.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="123.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Recursos/megalo.png" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
-            <Pane layoutX="73.0" layoutY="402.0" prefHeight="106.0" prefWidth="115.0" style="-fx-background-color: white;">
+            <Pane layoutX="52.0" layoutY="494.0" prefHeight="106.0" prefWidth="115.0" style="-fx-background-color: black;">
                <children>
-                  <Text layoutX="-17.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="imagen" textAlignment="CENTER" wrappingWidth="148.5078125">
-                     <font>
-                        <Font name="Oswald Regular" size="12.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="130.0" fitWidth="115.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Recursos/green.jpg" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
+            <Pane layoutX="491.0" layoutY="494.0" prefHeight="106.0" prefWidth="115.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="123.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Recursos/gerudo.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="491.0" layoutY="312.0" prefHeight="106.0" prefWidth="115.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="115.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Recursos/GENESIS--Sonic%20the%20Hedgehog%202_Sep30%2017_44_36.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <TableView layoutX="626.0" layoutY="506.0" prefHeight="82.0" prefWidth="253.0">
+               <columns>
+                  <TableColumn prefWidth="252.0" text="Descripcion:" />
+               </columns>
+            </TableView>
+            <TableView layoutX="626.0" layoutY="324.0" prefHeight="82.0" prefWidth="253.0">
+               <columns>
+                  <TableColumn prefWidth="252.0" text="Descripcion:" />
+               </columns>
+            </TableView>
          </children>
       </Pane>
-      <Pane prefHeight="84.0" prefWidth="921.0" style="-fx-background-color: darkorange; -fx-border-color: Black;">
+      <Pane prefHeight="84.0" prefWidth="921.0" style="-fx-background-color: black; -fx-border-color: Black;">
          <children>
             <Button fx:id="b51" layoutX="856.0" layoutY="25.0" mnemonicParsing="false" onAction="#buscar" prefHeight="45.0" prefWidth="45.0">
                <graphic>
@@ -65,12 +93,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <ImageView fitHeight="107.0" fitWidth="213.0" layoutX="2.0" layoutY="-16.0" pickOnBounds="true">
-               <image>
-                  <Image url="@../Recursos/logo.png" />
-               </image>
-            </ImageView>
-            <Button fx:id="b11" layoutX="240.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Inicio">
+            <Button fx:id="b11" layoutX="240.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Inicio" textFill="WHITE">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
@@ -80,31 +103,36 @@
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </TextField>
-            <Button fx:id="b111" layoutX="543.0" layoutY="25.0" mnemonicParsing="false" onAction="#musica" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Música">
+            <Button fx:id="b111" layoutX="543.0" layoutY="25.0" mnemonicParsing="false" onAction="#musica" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Música" textFill="WHITE">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="b112" layoutX="442.0" layoutY="25.0" mnemonicParsing="false" onAction="#series" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Series">
+            <Button fx:id="b112" layoutX="442.0" layoutY="25.0" mnemonicParsing="false" onAction="#series" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Series" textFill="WHITE">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="b113" layoutX="340.0" layoutY="25.0" mnemonicParsing="false" onAction="#peliculas" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Peliculas">
+            <Button fx:id="b113" layoutX="340.0" layoutY="25.0" mnemonicParsing="false" onAction="#peliculas" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Peliculas" textFill="WHITE">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Button>
          </children>
       </Pane>
-      <Pane layoutX="13.0" layoutY="218.0" prefHeight="45.0" prefWidth="884.0" style="-fx-background-color: Black;">
+      <Pane layoutX="13.0" layoutY="244.0" prefHeight="45.0" prefWidth="884.0" style="-fx-background-color: Black;">
          <children>
-            <Text fill="WHITE" layoutX="39.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Series:" wrappingWidth="66.12158203125">
+            <Text fill="WHITE" layoutX="39.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Música:" wrappingWidth="166.12158203125">
                <font>
                   <Font size="23.0" />
                </font>
             </Text>
          </children>
       </Pane>
+      <ImageView fitHeight="147.0" fitWidth="235.0" layoutX="15.0" layoutY="-21.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Recursos/logo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

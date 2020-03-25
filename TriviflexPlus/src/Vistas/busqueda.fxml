@@ -13,11 +13,11 @@
 
 <AnchorPane id="AnchorPane" fx:id="root" prefHeight="693.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_busqueda">
    <children>
-      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: yellow;">
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: fdbe20;">
          <children>
-            <Pane layoutX="285.0" layoutY="140.0" prefHeight="55.0" prefWidth="353.0" style="-fx-background-color: darkorange;">
+            <Pane layoutX="285.0" layoutY="140.0" prefHeight="55.0" prefWidth="353.0" style="-fx-background-color: A41E2D; -fx-border-color: black;">
                <children>
-                  <Text layoutX="102.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultados de la busqueda" textAlignment="CENTER" wrappingWidth="148.5078125">
+                  <Text fill="WHITE" layoutX="102.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultados de la busqueda" textAlignment="CENTER" wrappingWidth="148.5078125">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
@@ -39,7 +39,7 @@
                   <TableColumn prefWidth="421.0" text="Musica" />
                </columns>
             </TableView>
-            <Pane prefHeight="84.0" prefWidth="921.0" style="-fx-background-color: darkorange; -fx-border-color: Black;">
+            <Pane prefHeight="84.0" prefWidth="921.0" style="-fx-background-color: black; -fx-border-color: Black;">
                <children>
                   <Button fx:id="b51" layoutX="856.0" layoutY="25.0" mnemonicParsing="false" onAction="#buscar" prefHeight="45.0" prefWidth="45.0">
                      <graphic>
@@ -50,12 +50,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <ImageView fitHeight="107.0" fitWidth="213.0" layoutX="2.0" layoutY="-16.0" pickOnBounds="true">
-                     <image>
-                        <Image url="@../Recursos/logo.png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="b11" layoutX="240.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Inicio">
+                  <Button fx:id="b11" layoutX="240.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Inicio" textFill="WHITE">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
@@ -65,17 +60,17 @@
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </TextField>
-                  <Button fx:id="b111" layoutX="543.0" layoutY="25.0" mnemonicParsing="false" onAction="#musica" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Música">
+                  <Button fx:id="b111" layoutX="543.0" layoutY="25.0" mnemonicParsing="false" onAction="#musica" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Música" textFill="WHITE">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="b112" layoutX="442.0" layoutY="25.0" mnemonicParsing="false" onAction="#series" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Series">
+                  <Button fx:id="b112" layoutX="442.0" layoutY="25.0" mnemonicParsing="false" onAction="#series" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Series" textFill="WHITE">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="b113" layoutX="340.0" layoutY="25.0" mnemonicParsing="false" onAction="#peliculas" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-border-color: Black;" text="Peliculas">
+                  <Button fx:id="b113" layoutX="340.0" layoutY="25.0" mnemonicParsing="false" onAction="#peliculas" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Peliculas" textFill="WHITE">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
@@ -84,5 +79,10 @@
             </Pane>
          </children>
       </Pane>
+      <ImageView fitHeight="147.0" fitWidth="235.0" layoutX="15.0" layoutY="-21.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Recursos/logo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="root" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: Yellow;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_iniciofx">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="693.0" prefWidth="883.0" style="-fx-background-color: fdbe20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_iniciofx">
    <children>
-      <Pane blendMode="SRC_ATOP" depthTest="ENABLE" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: darkorange;">
+      <Pane blendMode="SRC_ATOP" depthTest="ENABLE" layoutX="-1.0" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: black;">
          <children>
-            <ImageView fitHeight="128.0" fitWidth="230.0" layoutX="28.0" layoutY="-24.0" pickOnBounds="true">
+            <ImageView fitHeight="183.0" fitWidth="271.0" layoutY="-45.0" pickOnBounds="true">
                <image>
                   <Image url="@../Recursos/logo.png" />
                </image></ImageView>
@@ -46,7 +46,7 @@
             <Image url="@../Recursos/File_20121026135500.jpg" />
          </image>
       </ImageView>
-      <Pane blendMode="SRC_ATOP" depthTest="ENABLE" layoutY="600.0" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: darkorange;" />
+      <Pane blendMode="SRC_ATOP" depthTest="ENABLE" layoutX="-1.0" layoutY="600.0" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: black;" />
       <ImageView fitHeight="116.0" fitWidth="146.0" layoutX="81.0" layoutY="289.0" pickOnBounds="true">
          <image>
             <Image url="@../Recursos/logo.png" />

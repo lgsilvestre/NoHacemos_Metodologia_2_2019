@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="root" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_registro">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: fdbe20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_registro">
    <children>
-      <Pane layoutX="278.0" layoutY="135.0" prefHeight="47.0" prefWidth="324.0" style="-fx-background-color: orange;">
+      <Pane layoutX="278.0" layoutY="135.0" prefHeight="47.0" prefWidth="324.0" style="-fx-background-color: A41E2D;">
          <children>
-            <Text layoutX="85.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creacion de usuario" wrappingWidth="155.0" />
+            <Text fill="WHITE" layoutX="85.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creacion de usuario" wrappingWidth="155.0" />
          </children>
       </Pane>
       <TextField fx:id="user" layoutX="278.0" layoutY="238.0" prefHeight="25.0" prefWidth="324.0" />
@@ -21,17 +21,14 @@
       <Text layoutX="302.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" textAlignment="CENTER" wrappingWidth="81.341796875" />
       <Text layoutX="306.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
       <Text layoutX="306.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Validar Contraseña" />
-      <Button fx:id="b1" layoutX="279.0" layoutY="542.0" mnemonicParsing="false" onAction="#Crear" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: Black;" text="Crear Usuario" textFill="WHITE" />
-      <Button fx:id="b2" layoutX="474.0" layoutY="542.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: Black;" text="Cancelar" textFill="WHITE" />
-      <Pane blendMode="SRC_ATOP" depthTest="ENABLE" layoutY="600.0" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: darkorange;" />
-      <Pane blendMode="SRC_ATOP" depthTest="ENABLE" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: darkorange;">
-         <children>
-            <ImageView fitHeight="128.0" fitWidth="230.0" layoutX="28.0" layoutY="-24.0" pickOnBounds="true">
-               <image>
-                  <Image url="@../Recursos/logo.png" />
-               </image>
-            </ImageView>
-         </children>
-      </Pane>
+      <Button fx:id="b1" layoutX="279.0" layoutY="542.0" mnemonicParsing="false" onAction="#Crear" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: A41E2D;" text="Crear Usuario" textFill="WHITE" />
+      <Button fx:id="b2" layoutX="474.0" layoutY="542.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: A41E2D;" text="Cancelar" textFill="WHITE" />
+      <Pane blendMode="SRC_ATOP" depthTest="ENABLE" layoutY="600.0" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: black;" />
+      <Pane blendMode="SRC_ATOP" depthTest="ENABLE" prefHeight="93.0" prefWidth="921.0" style="-fx-background-color: black;" />
+      <ImageView fitHeight="147.0" fitWidth="235.0" layoutX="15.0" layoutY="-21.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Recursos/logo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
