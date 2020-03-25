@@ -23,13 +23,22 @@ public class Serie extends Multimedia{
     String sub;
     String link;
     String Ncapitulo;
-
-    public Serie( String sub, String Ncapitulo, String genero, String autor,String link,String temporada, String nombre) {
+    int numeroCap;
+    public Serie( String sub, String Ncapitulo, String genero, String autor,String link,String temporada, String nombre,int numeroCap){
         super(nombre, genero, autor);
         this.Ncapitulo=Ncapitulo;
         this.temporada = temporada;
         this.sub = sub;
         this.link=link;
+        this.numeroCap=numeroCap;
+    }
+
+    public String getSub() {
+        return sub;
+    }
+
+    public int getNumeroCap() {
+        return numeroCap;
     }
 
     public String getLink() {

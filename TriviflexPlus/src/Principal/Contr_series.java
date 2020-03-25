@@ -5,6 +5,8 @@
  */
 package Principal;
 
+import static Principal.Main.serie1;
+import static Principal.Main.serie2;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -23,6 +25,8 @@ public class Contr_series implements Initializable{
     @FXML
     private Pane pane;
     @FXML
+    private Pane pane2;
+    @FXML
     private Button b51;
     @FXML
     private Button b11;
@@ -33,8 +37,8 @@ public class Contr_series implements Initializable{
     @FXML
     private Button b113;
     
-    
-    
+    static String nombreSerie="";
+    static int numeroCapitulo=1;
     
     
     @Override
@@ -62,7 +66,14 @@ public class Contr_series implements Initializable{
     }   
     @FXML
     public void repro(){
+        nombreSerie=serie1.get(0).getNombre();
+        numeroCapitulo=serie1.get(0).getNumeroCap();
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rseries.fxml"));
     }
-    
+    @FXML
+    public void repro2(){
+        nombreSerie=serie2.get(0).getNombre();
+        numeroCapitulo=serie2.get(0).getNumeroCap();
+        SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rseries.fxml"));
+    }
 }
