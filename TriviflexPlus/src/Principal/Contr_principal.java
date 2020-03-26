@@ -30,6 +30,8 @@ public class Contr_principal implements Initializable{
     @FXML
     private Button b113;
     @FXML
+    private Button b144;
+    @FXML
     public void volver(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/principal.fxml"));
     }
