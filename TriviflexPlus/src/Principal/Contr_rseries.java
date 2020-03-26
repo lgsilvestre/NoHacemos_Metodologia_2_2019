@@ -58,8 +58,7 @@ public class Contr_rseries implements Initializable{
                     Npro.setText(serie1.get(i).getAutor());
                     Ngen.setText(serie1.get(i).getGenero());
                     sub.setText(serie1.get(i).getSub());
-                }else{
-                    System.out.println("Error");
+                    portSerie.setImage(imgSerie1);
                 }
             }
         }else{
@@ -77,6 +76,7 @@ public class Contr_rseries implements Initializable{
                     Npro.setText(serie2.get(i).getAutor());
                     Ngen.setText(serie2.get(i).getGenero());
                     sub.setText(serie2.get(i).getSub());
+                    portSerie.setImage(imgSerie2);
                 }
             }
 
@@ -327,6 +327,8 @@ public class Contr_rseries implements Initializable{
     private ImageView imgcap3;
     @FXML
     private ImageView imgcap4;
+    @FXML
+    private ImageView portSerie;
     @FXML
     private Slider volumeSlide;
     
