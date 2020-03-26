@@ -115,6 +115,8 @@ public class Contr_rpeliculas implements Initializable{
     @FXML
     private Button bstop;
     @FXML
+    private Button bpause;
+    @FXML
     private Label minD;
     @FXML
     private Label maxD;
@@ -162,7 +164,7 @@ public class Contr_rpeliculas implements Initializable{
     @FXML
     public void play(){
         if(player.getStatus()==PLAYING){
-            player.stop();
+            player.pause();
         }
         player.play();
     }
@@ -170,7 +172,10 @@ public class Contr_rpeliculas implements Initializable{
     public void stop(){
         player.stop();
     }
-
+    @FXML
+    public void pause(){
+        player.pause();
+    }
     /***
      * TDO
      * Actualizar con reproduccion de video

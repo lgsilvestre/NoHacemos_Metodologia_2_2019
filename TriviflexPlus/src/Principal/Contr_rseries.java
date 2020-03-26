@@ -11,6 +11,7 @@ import static Principal.Contr_series.numeroCapitulo;
 import static Principal.Main.peliculas;
 import static Principal.Main.serie1;
 import static Principal.Main.serie2;
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -18,6 +19,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.media.Media;
@@ -32,7 +35,10 @@ import javafx.util.Duration;
  */
 public class Contr_rseries implements Initializable{
     private Media media;
-    
+    File file1= new File("src/Recursos/serie1.jpg");
+    File file2= new File("src/Recursos/serie2.jpg");
+    private Image imgSerie1 = new Image(file1.toURI().toString());
+    private Image imgSerie2= new Image(file2.toURI().toString());
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         if(nombreSerie==serie1.get(0).getNombre()){
@@ -87,11 +93,19 @@ public class Contr_rseries implements Initializable{
                 Ncap2.setText(serie1.get(2).getNcapitulo());
                 Ncap3.setText(serie1.get(3).getNcapitulo());
                 Ncap4.setText(serie1.get(4).getNcapitulo());
+                imgcap1.setImage(imgSerie1);
+                imgcap2.setImage(imgSerie1);
+                imgcap3.setImage(imgSerie1);
+                imgcap4.setImage(imgSerie1);
             }else{
                 Ncap1.setText(serie2.get(1).getNcapitulo());
                 Ncap2.setText(serie2.get(2).getNcapitulo());
                 Ncap3.setText(serie2.get(3).getNcapitulo());
                 Ncap4.setText(serie2.get(4).getNcapitulo());
+                imgcap1.setImage(imgSerie2);
+                imgcap2.setImage(imgSerie2);
+                imgcap3.setImage(imgSerie2);
+                imgcap4.setImage(imgSerie2);
             }
         }else{
             if(numeroCapitulo==2){
@@ -104,11 +118,19 @@ public class Contr_rseries implements Initializable{
                 Ncap2.setText(serie1.get(2).getNcapitulo());
                 Ncap3.setText(serie1.get(3).getNcapitulo());
                 Ncap4.setText(serie1.get(4).getNcapitulo());
+                imgcap1.setImage(imgSerie1);
+                imgcap2.setImage(imgSerie1);
+                imgcap3.setImage(imgSerie1);
+                imgcap4.setImage(imgSerie1);
                 }else{
                     Ncap1.setText(serie2.get(0).getNcapitulo());
                     Ncap2.setText(serie2.get(2).getNcapitulo());
                     Ncap3.setText(serie2.get(3).getNcapitulo());
                     Ncap4.setText(serie2.get(4).getNcapitulo());
+                    imgcap1.setImage(imgSerie2);
+                imgcap2.setImage(imgSerie2);
+                imgcap3.setImage(imgSerie2);
+                imgcap4.setImage(imgSerie2);
             }
             }else{
                 if(numeroCapitulo==3){
@@ -120,11 +142,19 @@ public class Contr_rseries implements Initializable{
                 Ncap2.setText(serie1.get(1).getNcapitulo());
                 Ncap3.setText(serie1.get(3).getNcapitulo());
                 Ncap4.setText(serie1.get(4).getNcapitulo());
+                imgcap1.setImage(imgSerie1);
+                imgcap2.setImage(imgSerie1);
+                imgcap3.setImage(imgSerie1);
+                imgcap4.setImage(imgSerie1);
                 }else{
                     Ncap1.setText(serie2.get(0).getNcapitulo());
                     Ncap2.setText(serie2.get(1).getNcapitulo());
                     Ncap3.setText(serie2.get(3).getNcapitulo());
                     Ncap4.setText(serie2.get(4).getNcapitulo());
+                    imgcap1.setImage(imgSerie2);
+                    imgcap2.setImage(imgSerie2);
+                    imgcap3.setImage(imgSerie2);
+                    imgcap4.setImage(imgSerie2);
             }
             }else{
                     if(numeroCapitulo==4){
@@ -136,11 +166,19 @@ public class Contr_rseries implements Initializable{
                             Ncap2.setText(serie1.get(1).getNcapitulo());
                             Ncap3.setText(serie1.get(2).getNcapitulo());
                             Ncap4.setText(serie1.get(4).getNcapitulo());
+                            imgcap1.setImage(imgSerie1);
+                            imgcap2.setImage(imgSerie1);
+                            imgcap3.setImage(imgSerie1);
+                            imgcap4.setImage(imgSerie1);
                             }else{
                                 Ncap1.setText(serie2.get(0).getNcapitulo());
                                 Ncap2.setText(serie2.get(1).getNcapitulo());
                                 Ncap3.setText(serie2.get(2).getNcapitulo());
                                 Ncap4.setText(serie2.get(4).getNcapitulo());
+                                imgcap1.setImage(imgSerie2);
+                                imgcap2.setImage(imgSerie2);
+                                imgcap3.setImage(imgSerie2);
+                                imgcap4.setImage(imgSerie2);
                             }
                     }else{
                         if(numeroCapitulo==5){
@@ -152,11 +190,19 @@ public class Contr_rseries implements Initializable{
                                 Ncap2.setText(serie1.get(1).getNcapitulo());
                                 Ncap3.setText(serie1.get(2).getNcapitulo());
                                 Ncap4.setText(serie1.get(3).getNcapitulo());
+                                imgcap1.setImage(imgSerie1);
+                                imgcap2.setImage(imgSerie1);
+                                imgcap3.setImage(imgSerie1);
+                                imgcap4.setImage(imgSerie1);
                                 }else{
                                     Ncap1.setText(serie2.get(0).getNcapitulo());
                                     Ncap2.setText(serie2.get(1).getNcapitulo());
                                     Ncap3.setText(serie2.get(2).getNcapitulo());
                                     Ncap4.setText(serie2.get(3).getNcapitulo());
+                                    imgcap1.setImage(imgSerie2);
+                                    imgcap2.setImage(imgSerie2);
+                                    imgcap3.setImage(imgSerie2);
+                                    imgcap4.setImage(imgSerie2);
                                 }
                         }
                     }
@@ -246,6 +292,8 @@ public class Contr_rseries implements Initializable{
     @FXML
     private Button bstop;
     @FXML
+    private Button bpause;
+    @FXML
     private Label minD;
     @FXML
     private Label maxD;
@@ -263,28 +311,52 @@ public class Contr_rseries implements Initializable{
     private Pane paneC3;
     @FXML
     private Pane paneC4;
+    @FXML
+    private ImageView imgcap1;
+    @FXML
+    private ImageView imgcap2;
+    @FXML
+    private ImageView imgcap3;
+    @FXML
+    private ImageView imgcap4;
     
     @FXML
     public void volver(){
+        if(player.getStatus()==PLAYING){
+            player.stop();
+        }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/principal.fxml"));
     }
     @FXML
     public void buscar(){
+        if(player.getStatus()==PLAYING){
+            player.stop();
+        }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/busqueda.fxml"));
     }
     public void peliculas(){
+        if(player.getStatus()==PLAYING){
+            player.stop();
+        }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/peliculas.fxml"));
     }
     public void series(){
+        if(player.getStatus()==PLAYING){
+            player.stop();
+        }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/series.fxml"));
     }
     @FXML
     public void musica(){
+        if(player.getStatus()==PLAYING){
+            player.stop();
+        }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/musica.fxml"));
     }   
        public void play(){
         if(player.getStatus()==PLAYING){
             player.pause();
+            
         }
         player.play();
     }
@@ -293,11 +365,18 @@ public class Contr_rseries implements Initializable{
         player.stop();
     }
     @FXML
+    public void pause(){
+        player.pause();
+    }
+    @FXML
     public void series1(){
         if(numeroCapitulo==1){
             numeroCapitulo=2;
         }else{
             numeroCapitulo=1;
+        }
+        if(player.getStatus()==PLAYING){
+            player.stop();
         }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rseries.fxml"));
     }
@@ -308,6 +387,9 @@ public class Contr_rseries implements Initializable{
         }else{
             numeroCapitulo=2;
         }
+        if(player.getStatus()==PLAYING){
+            player.stop();
+        }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rseries.fxml"));
     }
     @FXML
@@ -317,6 +399,9 @@ public class Contr_rseries implements Initializable{
         }else{
             numeroCapitulo=3;
         }
+        if(player.getStatus()==PLAYING){
+            player.stop();
+        }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rseries.fxml"));
     }
     @FXML
@@ -325,6 +410,9 @@ public class Contr_rseries implements Initializable{
             numeroCapitulo=5;
         }else{
             numeroCapitulo=4;
+        }
+        if(player.getStatus()==PLAYING){
+            player.stop();
         }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rseries.fxml"));
     }

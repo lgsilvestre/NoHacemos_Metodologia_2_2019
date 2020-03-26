@@ -26,6 +26,8 @@ public class Contr_peliculas implements Initializable{
     
     @FXML
     private Pane pane2;
+    @FXML
+    private Pane pane3;
     
     @FXML
     private AnchorPane root;
@@ -79,6 +81,11 @@ public class Contr_peliculas implements Initializable{
     @FXML
     public void repro2(){
         nombrePeli=peliculas.get(1).getNombre();
+        SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
+    }
+    @FXML
+    public void repro3(){
+        nombrePeli=peliculas.get(2).getNombre();
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
     }
 

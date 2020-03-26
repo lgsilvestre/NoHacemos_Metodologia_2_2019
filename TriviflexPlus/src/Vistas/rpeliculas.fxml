@@ -12,13 +12,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="root" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_rpeliculas">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_rpeliculas">
    <children>
       <Pane layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0" prefWidth="1000.0" style="-fx-background-color: fdbe20;">
          <children>
             <Pane layoutX="239.0" layoutY="82.0" prefHeight="133.0" prefWidth="662.0" style="-fx-background-color: darkorange;">
                <children>
-                  <Text layoutX="75.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripcion de la pelicula:" textAlignment="CENTER" wrappingWidth="148.5078125">
+                  <Text layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripcion de la pelicula:" textAlignment="CENTER" wrappingWidth="148.5078125">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
@@ -26,11 +26,11 @@
                </children>
             </Pane>
             <AnchorPane layoutX="65.0" layoutY="242.0" style="-fx-background-color: transparent;" />
-            <Pane layoutX="76.0" layoutY="644.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: gray;">
+            <Pane layoutX="123.0" layoutY="645.0" prefHeight="30.0" prefWidth="695.0" style="-fx-background-color: gray;">
                <children>
-                  <Slider fx:id="slide" layoutX="39.0" layoutY="7.0" prefHeight="17.0" prefWidth="524.0" />
+                  <Slider fx:id="slide" layoutX="39.0" layoutY="7.0" prefHeight="17.0" prefWidth="594.0" />
                   <Label fx:id="minD" layoutY="6.0" prefHeight="17.0" prefWidth="36.0" />
-                  <Label fx:id="maxD" layoutX="563.0" layoutY="6.0" prefHeight="17.0" prefWidth="36.0" />
+                  <Label fx:id="maxD" layoutX="645.0" layoutY="6.0" prefHeight="17.0" prefWidth="36.0" />
                </children>
             </Pane>
             <Button fx:id="bplay" layoutX="38.0" layoutY="645.0" mnemonicParsing="false" onAction="#play" text="Play">
@@ -38,7 +38,7 @@
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="bstop" layoutX="676.0" layoutY="647.0" mnemonicParsing="false" onAction="#stop" text="Stop">
+            <Button fx:id="bstop" layoutX="818.0" layoutY="646.0" mnemonicParsing="false" onAction="#stop" text="Stop">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
@@ -82,6 +82,10 @@
                </children>
             </Pane>
             <MediaView fx:id="view" fitHeight="400.0" fitWidth="800.0" layoutX="57.0" layoutY="222.0" nodeOrientation="INHERIT" preserveRatio="false" scaleZ="0.0" smooth="false" style="visibility: true;" />
+            <Button fx:id="bpause" layoutX="74.0" layoutY="646.0" mnemonicParsing="false" onMouseClicked="#pause" prefHeight="27.0" prefWidth="50.0" text="Pause">
+               <font>
+                  <Font name="Oswald Regular" size="12.0" />
+               </font></Button>
          </children>
       </Pane>
       <Pane layoutX="75.0" layoutY="89.0" prefHeight="133.0" prefWidth="149.0" style="-fx-background-color: white;">
