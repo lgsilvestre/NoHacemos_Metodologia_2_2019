@@ -16,6 +16,26 @@
    <children>
       <Pane layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1020.0" style="-fx-background-color: fdbe20;">
          <children>
+            <Pane layoutX="715.0" layoutY="614.0" prefHeight="39.0" prefWidth="177.0" style="-fx-background-color: gray;">
+               <children>
+                  <Slider fx:id="volumeSlide" layoutX="23.0" layoutY="19.0" prefHeight="14.0" prefWidth="132.0" />
+                  <Text layoutX="61.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volumen">
+                     <font>
+                        <Font name="Oswald Regular" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="12.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0%">
+                     <font>
+                        <Font name="Oswald Regular" size="10.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="144.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100%">
+                     <font>
+                        <Font name="Oswald Regular" size="10.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
             <Pane layoutX="236.0" layoutY="113.0" prefHeight="133.0" prefWidth="739.0" style="-fx-background-color: darkorange;">
                <children>
                   <Text layoutX="20.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripcion de la serie" textAlignment="CENTER" wrappingWidth="148.5078125">
@@ -171,7 +191,7 @@
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="Ncap4" layoutX="844.0" layoutY="545.0" prefHeight="23.0" prefWidth="160.0">
+            <Label fx:id="Ncap4" layoutX="845.0" layoutY="544.0" prefHeight="23.0" prefWidth="132.0">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
