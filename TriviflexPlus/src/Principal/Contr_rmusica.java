@@ -5,6 +5,7 @@
  */
 package Principal;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -53,21 +54,29 @@ public class Contr_rmusica implements Initializable{
     private MediaView view;
     @FXML
     private ImageView caratula;
+    File file1= new File("src/Recursos/Megalovania.jpg");
+    File file2= new File("src/Recursos/Chemical Plant Zone.jpg");
+    File file3= new File("src/Recursos/Green Hill Zone.png");
+    File file4= new File("src/Recursos/Gerudo Valley.jpg");
+    private Image imgSerie1 = new Image(file1.toURI().toString());
+    private Image imgSerie2= new Image(file2.toURI().toString());
+    private Image imgSerie3= new Image(file3.toURI().toString());
+    private Image imgSerie4= new Image(file4.toURI().toString());
+    
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        caratula = new ImageView();
         for (int i = 0; i < Main.canciones.size(); i++) {
             if(Contr_musica.nombre.equals(Main.canciones.get(i).getNombre())){
                 media = new Media(Main.canciones.get(i).getLink());
                 if(Contr_musica.nombre.equals("Megalovania")){
-                    
+                    caratula.setImage(imgSerie1);
                 }else if(Contr_musica.nombre.equals("Chemical Plant Zone")){
-                    
+                    caratula.setImage(imgSerie2);
                 }else if(Contr_musica.nombre.equals("Green Hill Zone")){
-                    
+                    caratula.setImage(imgSerie3);
                 }else{
-                    
+                    caratula.setImage(imgSerie4);
                 }
             }
         }
@@ -156,13 +165,17 @@ public class Contr_rmusica implements Initializable{
     @FXML
     public void play(){
         if(player.getStatus()==PLAYING){
-            player.stop();
+            player.play();
         }
         player.play();
     }
     @FXML
     public void stop(){
         player.stop();
+    }
+    @FXML
+    public void pause(){
+        player.pause();
     }
     /**
      * TDO

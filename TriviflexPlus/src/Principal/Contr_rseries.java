@@ -355,7 +355,7 @@ public class Contr_rseries implements Initializable{
     }   
        public void play(){
         if(player.getStatus()==PLAYING){
-            player.pause();
+            player.play();
             
         }
         player.play();

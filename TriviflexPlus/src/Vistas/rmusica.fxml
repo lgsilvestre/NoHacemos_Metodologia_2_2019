@@ -15,9 +15,9 @@
    <children>
       <Pane layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: fdbe20;">
          <children>
-            <ImageView fx:id="caratula" fitHeight="470.0" fitWidth="811.0" layoutX="55.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
-            <MediaView fitHeight="200.0" fitWidth="200.0" layoutX="365.0" layoutY="295.0" />
-            <Button fx:id="bplay" layoutX="107.0" layoutY="597.0" mnemonicParsing="false" onAction="#play" text="Play">
+            <ImageView fx:id="caratula" fitHeight="487.0" fitWidth="776.0" layoutX="55.0" layoutY="107.0" pickOnBounds="true" />
+            <MediaView fitHeight="200.0" fitWidth="200.0" layoutX="343.0" layoutY="177.0" />
+            <Button fx:id="bplay" layoutX="56.0" layoutY="597.0" mnemonicParsing="false" onAction="#play" text="Play">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
@@ -34,6 +34,11 @@
                </font>
             </Button>
             <Slider fx:id="slide" layoutX="194.0" layoutY="601.0" prefHeight="17.0" prefWidth="541.0" />
+            <Button fx:id="bpause" layoutX="94.0" layoutY="597.0" mnemonicParsing="false" onMouseClicked="#pause" prefHeight="17.0" prefWidth="50.0" text="Pause">
+               <font>
+                  <Font name="Oswald Regular" size="12.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
       <Pane prefHeight="84.0" prefWidth="921.0" style="-fx-background-color: black; -fx-border-color: Black;">

@@ -164,7 +164,7 @@ public class Contr_rpeliculas implements Initializable{
     @FXML
     public void play(){
         if(player.getStatus()==PLAYING){
-            player.pause();
+            player.play();
         }
         player.play();
     }
