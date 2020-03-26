@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="root" prefHeight="630.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_rseries">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="630.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_rseries">
    <children>
       <Pane layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1020.0" style="-fx-background-color: fdbe20;">
          <children>
@@ -23,12 +23,12 @@
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Text>
-                  <Label fx:id="Npro" layoutX="121.0" layoutY="65.0" prefHeight="17.0" prefWidth="216.0">
+                  <Label fx:id="Npro" layoutX="142.0" layoutY="65.0" prefHeight="17.0" prefWidth="216.0">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Label>
-                  <Label fx:id="Ncap" layoutX="129.0" layoutY="45.0" prefHeight="17.0" prefWidth="288.0">
+                  <Label fx:id="Ncap" layoutX="142.0" layoutY="45.0" prefHeight="17.0" prefWidth="288.0">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
@@ -43,32 +43,32 @@
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Text>
-                  <Text layoutX="7.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del capitulo:">
+                  <Text layoutX="3.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del capitulo:">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Text>
-                  <Text layoutX="7.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Productora:">
+                  <Text layoutX="3.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Productora:">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Text>
-                  <Text layoutX="4.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genero">
+                  <Text layoutX="3.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genero">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Text>
-                  <Label fx:id="Ngen" layoutX="103.0" layoutY="82.0" prefHeight="17.0" prefWidth="288.0">
+                  <Label fx:id="Ngen" layoutX="142.0" layoutY="82.0" prefHeight="17.0" prefWidth="288.0">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Label>
-                  <Text layoutX="-1.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subtitulos">
+                  <Text layoutX="3.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subtitulos">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Text>
-                  <Label fx:id="sub" layoutX="91.0" layoutY="106.0" prefHeight="17.0" prefWidth="288.0">
+                  <Label fx:id="sub" layoutX="142.0" layoutY="106.0" prefHeight="17.0" prefWidth="288.0">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
@@ -122,26 +122,36 @@
                   </Button>
                </children>
             </Pane>
-            <Pane fx:id="paneC1" layoutX="722.0" layoutY="259.0" onMouseClicked="#series1" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;" />
-            <Pane fx:id="paneC2" layoutX="722.0" layoutY="345.0" onMouseClicked="#series2" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;" />
-            <Pane fx:id="paneC3" layoutX="725.0" layoutY="431.0" onMouseClicked="#series3" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;" />
-            <MediaView fx:id="view" fitHeight="340.0" fitWidth="640.0" layoutX="39.0" layoutY="265.0" />
-            <Pane fx:id="paneC4" layoutX="727.0" layoutY="519.0" onMouseClicked="#series4" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;" />
-            <Pane layoutX="56.0" layoutY="616.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: gray;">
+            <Pane fx:id="paneC1" layoutX="722.0" layoutY="259.0" onMouseClicked="#series1" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;">
                <children>
-                  <Slider fx:id="slide" layoutX="39.0" layoutY="7.0" prefHeight="17.0" prefWidth="524.0" />
-                  <Label fx:id="minD" layoutY="6.0" prefHeight="17.0" prefWidth="36.0" />
-                  <Label fx:id="maxD" layoutX="563.0" layoutY="6.0" prefHeight="17.0" prefWidth="36.0" />
-                  <Label fx:id="maxD" layoutX="561.0" layoutY="7.0" prefHeight="17.0" prefWidth="36.0" />
+                  <ImageView fx:id="imgcap1" fitHeight="73.0" fitWidth="117.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
+               </children></Pane>
+            <Pane fx:id="paneC2" layoutX="722.0" layoutY="345.0" onMouseClicked="#series2" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;">
+               <children>
+                  <ImageView fx:id="imgcap2" fitHeight="73.0" fitWidth="117.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
+               </children></Pane>
+            <Pane fx:id="paneC3" layoutX="725.0" layoutY="431.0" onMouseClicked="#series3" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;">
+               <children>
+                  <ImageView fx:id="imgcap3" fitHeight="73.0" fitWidth="117.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
+               </children></Pane>
+            <MediaView fx:id="view" fitHeight="340.0" fitWidth="640.0" layoutX="39.0" layoutY="265.0" />
+            <Pane fx:id="paneC4" layoutX="727.0" layoutY="519.0" onMouseClicked="#series4" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;">
+               <children>
+                  <ImageView fx:id="imgcap4" fitHeight="73.0" fitWidth="117.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
+               </children></Pane>
+            <Pane layoutX="99.0" layoutY="616.0" prefHeight="30.0" prefWidth="557.0" style="-fx-background-color: gray;">
+               <children>
+                  <Slider fx:id="slide" layoutX="39.0" layoutY="7.0" prefHeight="17.0" prefWidth="481.0" />
+                  <Label fx:id="maxD" layoutX="520.0" layoutY="8.0" prefHeight="17.0" prefWidth="36.0" />
                   <Label fx:id="minD" layoutY="6.0" prefHeight="17.0" prefWidth="36.0" />
                </children>
             </Pane>
-            <Button fx:id="bplay" layoutX="9.0" layoutY="616.0" mnemonicParsing="false" onAction="#play" text="Play">
+            <Button fx:id="bplay" layoutX="9.0" layoutY="619.0" mnemonicParsing="false" onAction="#play" text="Play">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="bstop" layoutX="662.0" layoutY="616.0" mnemonicParsing="false" onAction="#stop" text="Stop">
+            <Button fx:id="bstop" layoutX="660.0" layoutY="618.0" mnemonicParsing="false" onAction="#stop" text="Stop">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
@@ -166,6 +176,11 @@
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Label>
+            <Button fx:id="bpause1" layoutX="45.0" layoutY="618.0" mnemonicParsing="false" onMouseClicked="#pause" prefHeight="27.0" prefWidth="50.0" text="Pause">
+               <font>
+                  <Font name="Oswald Regular" size="12.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
       <ImageView fitHeight="147.0" fitWidth="235.0" layoutX="15.0" layoutY="-21.0" pickOnBounds="true">
