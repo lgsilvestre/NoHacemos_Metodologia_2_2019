@@ -8,6 +8,8 @@ package Principal;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -50,6 +52,8 @@ public class Contr_rmusica implements Initializable{
     private Button bplay;
     @FXML
     private Button bstop;
+    @FXML
+    private Slider volumeSlider;
     private MediaPlayer player;
     private MediaView view;
     @FXML
@@ -125,6 +129,14 @@ public class Contr_rmusica implements Initializable{
                 slide.setValue(value.toSeconds());
                 minD.setText(String.format("%.2f", value.toMinutes()));
             });
+        });
+        volumeSlider.setValue(player.getVolume()*100);
+        volumeSlider.valueProperty().addListener(new InvalidationListener() {
+
+            @Override
+            public void invalidated(Observable observable) {
+                player.setVolume(volumeSlider.getValue()/100);
+            }
         });
     }
     @FXML
