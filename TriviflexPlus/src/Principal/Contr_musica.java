@@ -19,7 +19,8 @@ import javafx.scene.layout.Pane;
  * @author Shipus
  */
 public class Contr_musica implements Initializable {
-
+    
+    static String nombre;
     @FXML
     private Button b51;
     @FXML
@@ -60,7 +61,23 @@ public class Contr_musica implements Initializable {
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/busqueda.fxml"));
     }
     @FXML
-    public void repro(){
+    public void repro1(){
+        nombre = "Megalovania";
+        SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rmusica.fxml"));
+    }
+    @FXML
+    public void repro2(){
+        nombre = "Chemical Plant Zone";
+        SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rmusica.fxml"));
+    }
+    @FXML
+    public void repro3(){
+        nombre = "Green Hill Zone";
+        SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rmusica.fxml"));
+    }
+    @FXML
+    public void repro4(){
+        nombre = "Gerudo Valley";
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rmusica.fxml"));
     }
 
