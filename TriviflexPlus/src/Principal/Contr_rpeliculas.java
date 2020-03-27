@@ -8,6 +8,7 @@ package Principal;
 import Logica.Pelicula;
 import static Principal.Contr_peliculas.nombrePeli;
 import static Principal.Main.peliculas;
+import static Principal.Main.serie1;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.media.Media;
@@ -45,6 +47,18 @@ public class Contr_rpeliculas implements Initializable{
     private Button b112;
     @FXML
     private Button b113;
+    @FXML
+    private ImageView caratula;
+    @FXML
+    private Label Npro;
+    @FXML
+    private Label Ncap;
+    @FXML
+    private Label Nserie;
+    @FXML
+    private Label Ngen;
+    @FXML
+    private Label sub;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         /**
@@ -54,6 +68,11 @@ public class Contr_rpeliculas implements Initializable{
        for (int i = 0; i < peliculas.size(); i++) {
             if(nombrePeli==peliculas.get(i).getNombre()){
                 media = new Media(peliculas.get(i).getLink());
+                Nserie.setText(peliculas.get(i).getNombre());
+                Npro.setText(peliculas.get(i).getAutor());
+                Ngen.setText(peliculas.get(i).getGenero());
+                sub.setText(peliculas.get(i).isSub());
+                caratula.setImage(peliculas.get(i).getImagen());
             }
         }
 

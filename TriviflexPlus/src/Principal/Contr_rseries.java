@@ -39,6 +39,10 @@ public class Contr_rseries implements Initializable{
     File file2= new File("src/Recursos/serie2.jpg");
     private Image imgSerie1 = new Image(file1.toURI().toString());
     private Image imgSerie2= new Image(file2.toURI().toString());
+    @FXML
+    private Button bpause1;
+    @FXML
+    private ImageView caratula;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         if(nombreSerie==serie1.get(0).getNombre()){
@@ -56,6 +60,8 @@ public class Contr_rseries implements Initializable{
                     Npro.setText(serie1.get(i).getAutor());
                     Ngen.setText(serie1.get(i).getGenero());
                     sub.setText(serie1.get(i).getSub());
+                    caratula.setImage(serie1.get(i).getImagen());
+                    
                 }else{
                     System.out.println("Error");
                 }
@@ -75,6 +81,7 @@ public class Contr_rseries implements Initializable{
                     Npro.setText(serie2.get(i).getAutor());
                     Ngen.setText(serie2.get(i).getGenero());
                     sub.setText(serie2.get(i).getSub());
+                    caratula.setImage(serie2.get(i).getImagen());
                 }else{
                     System.out.println("Error");
                 }
@@ -292,8 +299,6 @@ public class Contr_rseries implements Initializable{
     @FXML
     private Button bstop;
     @FXML
-    private Button bpause;
-    @FXML
     private Label minD;
     @FXML
     private Label maxD;
@@ -301,7 +306,6 @@ public class Contr_rseries implements Initializable{
     private MediaView view;
     @FXML
     private Slider slide;
-    @FXML
     private MediaPlayer player;
     @FXML
     private Pane paneC1;
@@ -353,6 +357,7 @@ public class Contr_rseries implements Initializable{
         }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/musica.fxml"));
     }   
+    @FXML
        public void play(){
         if(player.getStatus()==PLAYING){
             player.play();

@@ -11,15 +11,11 @@
 
 <AnchorPane id="AnchorPane" fx:id="root" prefHeight="693.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_series">
    <children>
-      <Pane layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: fdbe20;">
+      <Pane fx:id="recomendacion" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: fdbe20;">
          <children>
-            <Pane layoutX="183.0" layoutY="101.0" prefHeight="130.0" prefWidth="556.0" style="-fx-background-color: darkorange;">
+            <Pane layoutX="183.0" layoutY="101.0" onMouseClicked="#repro3" prefHeight="130.0" prefWidth="556.0" style="-fx-background-color: darkorange;">
                <children>
-                  <ImageView fitHeight="130.0" fitWidth="556.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Recursos/jojostardb.jpg" />
-                     </image>
-                  </ImageView>
+                  <ImageView fx:id="recomendacions" fitHeight="130.0" fitWidth="556.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </Pane>
             <Pane fx:id="pane" layoutX="69.0" layoutY="340.0" onMouseClicked="#repro" prefHeight="271.0" prefWidth="187.0" style="-fx-background-color: white;">

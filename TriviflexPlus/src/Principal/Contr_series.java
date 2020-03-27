@@ -8,10 +8,13 @@ package Principal;
 import static Principal.Main.serie1;
 import static Principal.Main.serie2;
 import java.net.URL;
+import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
@@ -41,8 +44,23 @@ public class Contr_series implements Initializable{
     static int numeroCapitulo=1;
     
     
+    @FXML
+    private ImageView recomendacions;
+    @FXML
+    private Pane recomendacion;
+    Random rand = new Random(); //instance of random class
+    int upperbound = 2;
+    int int_random = rand.nextInt(upperbound); 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        
+        if(int_random==0){
+            recomendacions.setImage(serie1.get(int_random).getBanner());
+            
+        }else{
+            recomendacions.setImage(serie2.get(int_random).getBanner());
+        }
+        
     }
     @FXML
     public void volver(){
@@ -75,5 +93,19 @@ public class Contr_series implements Initializable{
         nombreSerie=serie2.get(0).getNombre();
         numeroCapitulo=serie2.get(0).getNumeroCap();
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rseries.fxml"));
+    }
+    
+    @FXML
+    public void repro3(){
+        if (int_random==0) {
+            nombreSerie=serie1.get(0).getNombre();
+            numeroCapitulo=serie1.get(0).getNumeroCap();
+            SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rseries.fxml"));
+        }else{
+            nombreSerie=serie2.get(0).getNombre();
+            numeroCapitulo=serie2.get(0).getNumeroCap();
+            SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rseries.fxml"));
+        }
+        
     }
 }

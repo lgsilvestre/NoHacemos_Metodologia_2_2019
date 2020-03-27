@@ -5,11 +5,17 @@
  */
 package Principal;
 
+import Logica.Musica;
+import Logica.Pelicula;
+import Logica.Serie;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
@@ -30,6 +36,45 @@ public class Contr_busqueda implements Initializable{
     private Button b112;
     @FXML
     private Button b113;
+    
+    @FXML
+    private TableView<Musica> t1;
+    
+    @FXML
+    private TableColumn nombre1;
+    
+    @FXML
+    private TableColumn duracion1;
+    
+    @FXML
+    private TableColumn artista1;
+    
+    @FXML
+    private TableView<Pelicula> t2;
+    
+    @FXML
+    private TableColumn nombre2;
+    
+    @FXML
+    private TableColumn duracion2;
+    
+    @FXML
+    private TableColumn artista2;
+    
+    @FXML
+    private TableView<Serie> t3;
+    
+    @FXML
+    private TableColumn nombre3;
+    
+    @FXML
+    private TableColumn duracion3;
+    
+    @FXML
+    private TableColumn artista3;
+    
+    
+
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {

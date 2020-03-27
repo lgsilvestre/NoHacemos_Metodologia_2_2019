@@ -6,12 +6,15 @@
 package Principal;
 
 import static Principal.Main.peliculas;
+import static Principal.Main.serie1;
 import java.net.URL;
+import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -43,10 +46,22 @@ public class Contr_peliculas implements Initializable{
     private Button b112;
     @FXML
     private Button b113;
-    
+    @FXML
+    private ImageView recomendacion;
+    Random rand = new Random(); //instance of random class
+    int upperbound = 3;
+    int int_random = rand.nextInt(upperbound); 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        
+        if(int_random==0){
+            recomendacion.setImage(peliculas.get(int_random).getBanner());
+            
+        }else if (int_random==1){
+            recomendacion.setImage(peliculas.get(int_random).getBanner());
+            
+        }else{
+            recomendacion.setImage(peliculas.get(int_random).getBanner());
+        }
     }
     @FXML
     public void volver(){
@@ -87,6 +102,21 @@ public class Contr_peliculas implements Initializable{
     public void repro3(){
         nombrePeli=peliculas.get(2).getNombre();
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
+    }
+    @FXML
+    public void repro4(){
+        
+        if(int_random==0){
+            nombrePeli=peliculas.get(0).getNombre();
+            SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
+            
+        }else if (int_random==1){
+            nombrePeli=peliculas.get(1).getNombre();
+            SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
+        }else{
+            nombrePeli=peliculas.get(2).getNombre();
+            SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rpeliculas.fxml"));
+        }
     }
 
 

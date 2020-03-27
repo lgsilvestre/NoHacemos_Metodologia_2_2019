@@ -6,6 +6,7 @@
 package Logica;
 
 import java.util.ArrayList;
+import javafx.scene.image.Image;
 
 /**
  *
@@ -24,6 +25,10 @@ public class Serie extends Multimedia{
     String link;
     String Ncapitulo;
     int numeroCap;
+    Image imagen;
+    Image banner;
+
+    
     public Serie( String sub, String Ncapitulo, String genero, String autor,String link,String temporada, String nombre,int numeroCap){
         super(nombre, genero, autor);
         this.Ncapitulo=Ncapitulo;
@@ -33,6 +38,21 @@ public class Serie extends Multimedia{
         this.numeroCap=numeroCap;
     }
 
+    public Image getBanner() {
+        return banner;
+    }
+
+    public void setBanner(Image banner) {
+        this.banner = banner;
+    }
+    
+    public Image getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(Image imagen) {
+        this.imagen = imagen;
+    }
     public String getSub() {
         return sub;
     }
