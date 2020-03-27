@@ -17,11 +17,11 @@
       <Pane layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0" prefWidth="1000.0" style="-fx-background-color: fdbe20;">
          <children>
             <AnchorPane layoutX="65.0" layoutY="242.0" style="-fx-background-color: transparent;" />
-            <Pane layoutX="123.0" layoutY="645.0" prefHeight="30.0" prefWidth="695.0" style="-fx-background-color: gray;">
+            <Pane layoutX="123.0" layoutY="645.0" prefHeight="30.0" prefWidth="570.0" style="-fx-background-color: gray;">
                <children>
-                  <Slider fx:id="slide" layoutX="39.0" layoutY="7.0" prefHeight="17.0" prefWidth="594.0" />
+                  <Slider fx:id="slide" layoutX="39.0" layoutY="7.0" prefHeight="17.0" prefWidth="479.0" />
                   <Label fx:id="minD" layoutY="6.0" prefHeight="17.0" prefWidth="36.0" />
-                  <Label fx:id="maxD" layoutX="645.0" layoutY="6.0" prefHeight="17.0" prefWidth="36.0" />
+                  <Label fx:id="maxD" layoutX="520.0" layoutY="6.0" prefHeight="17.0" prefWidth="36.0" />
                </children>
             </Pane>
             <Button fx:id="bplay" layoutX="38.0" layoutY="645.0" mnemonicParsing="false" onAction="#play" text="Play">
@@ -29,7 +29,7 @@
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="bstop" layoutX="818.0" layoutY="646.0" mnemonicParsing="false" onAction="#stop" text="Stop">
+            <Button fx:id="bstop" layoutX="704.0" layoutY="647.0" mnemonicParsing="false" onAction="#stop" text="Stop">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
@@ -77,6 +77,26 @@
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font></Button>
+            <Pane layoutX="769.0" layoutY="641.0" prefHeight="39.0" prefWidth="177.0" style="-fx-background-color: gray;">
+               <children>
+                  <Slider fx:id="volumeSlide" layoutX="23.0" layoutY="19.0" prefHeight="14.0" prefWidth="132.0" />
+                  <Text layoutX="61.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volumen">
+                     <font>
+                        <Font name="Oswald Regular" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="12.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0%">
+                     <font>
+                        <Font name="Oswald Regular" size="10.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="144.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100%">
+                     <font>
+                        <Font name="Oswald Regular" size="10.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
             <ImageView fx:id="caratula" fitHeight="133.0" fitWidth="105.0" layoutX="123.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </Pane>

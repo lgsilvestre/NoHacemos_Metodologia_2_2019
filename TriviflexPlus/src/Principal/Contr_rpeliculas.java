@@ -12,6 +12,8 @@ import static Principal.Main.serie1;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -103,7 +105,15 @@ public class Contr_rpeliculas implements Initializable{
         
         
         player.setOnReady(() -> {
-            
+            volumeSlide.setValue(player.getVolume()*100);
+            volumeSlide.valueProperty().addListener(new InvalidationListener(){
+                @Override
+                public void invalidated(Observable o) {
+                    player.setVolume(volumeSlide.getValue() / 100);
+                }
+                
+                
+            });
             minD.setText("0:00");
             maxD.setText("0:00");
             // obtener metadatos, si existen
@@ -125,6 +135,8 @@ public class Contr_rpeliculas implements Initializable{
         });
         
     }
+    @FXML
+    private Slider volumeSlide;
     private Media media;
     private MediaPlayer player;
     @FXML

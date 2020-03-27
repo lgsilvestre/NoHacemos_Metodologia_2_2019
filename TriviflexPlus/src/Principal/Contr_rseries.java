@@ -14,6 +14,8 @@ import static Principal.Main.serie2;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -61,9 +63,6 @@ public class Contr_rseries implements Initializable{
                     Ngen.setText(serie1.get(i).getGenero());
                     sub.setText(serie1.get(i).getSub());
                     caratula.setImage(serie1.get(i).getImagen());
-                    
-                }else{
-                    System.out.println("Error");
                 }
             }
         }else{
@@ -81,7 +80,6 @@ public class Contr_rseries implements Initializable{
                     Npro.setText(serie2.get(i).getAutor());
                     Ngen.setText(serie2.get(i).getGenero());
                     sub.setText(serie2.get(i).getSub());
-                    caratula.setImage(serie2.get(i).getImagen());
                 }else{
                     System.out.println("Error");
                 }
@@ -243,7 +241,15 @@ public class Contr_rseries implements Initializable{
         
         
         player.setOnReady(() -> {
-            
+            volumeSlide.setValue(player.getVolume()*100);
+            volumeSlide.valueProperty().addListener(new InvalidationListener(){
+                @Override
+                public void invalidated(Observable o) {
+                    player.setVolume(volumeSlide.getValue() / 100);
+                }
+                
+                
+            });
             minD.setText("0:00");
             maxD.setText("0:00");
             // obtener metadatos, si existen
@@ -323,6 +329,10 @@ public class Contr_rseries implements Initializable{
     private ImageView imgcap3;
     @FXML
     private ImageView imgcap4;
+    @FXML
+    private ImageView portSerie;
+    @FXML
+    private Slider volumeSlide;
     
     @FXML
     public void volver(){
