@@ -105,6 +105,7 @@ public class Contr_series implements Initializable{
             nombreSerie=serie2.get(0).getNombre();
             numeroCapitulo=serie2.get(0).getNumeroCap();
             SceneHandler.cargarVista(root, getClass().getResource("/Vistas/rseries.fxml"));
+            
         }
         
     }

@@ -33,14 +33,16 @@ public class Contr_iniciofx implements Initializable  {
     @FXML
     private AnchorPane root;
     
-     @FXML
+    @FXML
     private Button iSesion;
-     @FXML
+    @FXML
     private Button Nuser;
-     @FXML
+    @FXML
     private TextField nombre;
-     @FXML
+    @FXML
     private TextField pass;
+     
+     
      
      
    @FXML

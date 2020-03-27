@@ -58,6 +58,10 @@ public class Main extends Application{
         peli2.setBanner(banner2);
         peli3.setImagen(caratula3);
         peli3.setBanner(banner3);
+        peli1.setTipo("Pelicula");
+        peli2.setTipo("Pelicula");
+        peli3.setTipo("Pelicula");
+                
         peliculas.add(peli1);
         peliculas.add(peli2);
         peliculas.add(peli3);
@@ -73,11 +77,11 @@ public class Main extends Application{
          * 7.- nombre de la serie
          */
 
-        Serie cap1S1= new Serie("Subtitulada al español","Capitulo 1: Dio el invasor","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2001.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood",1);
-        Serie cap2S1= new Serie("Subtitulada al español","Capitulo 2:Una carta del pasado","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2002.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood",2);
-        Serie cap3S1= new Serie("Subtitulada al español","Capitulo 3:Juventud con Dio","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2003.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood",3);
-        Serie cap4S1= new Serie("Subtitulada al español","Capitulo 4:Overdrive","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2004.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood",4);
-        Serie cap5S1= new Serie("Subtitulada al español","Capitulo 5:Los caballeros oscuros","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2005.mp4","temporada 1","JoJo's Bizarre Adventure: Phantom Blood",5);
+        Serie cap1S1= new Serie("Subtitulada al español","Capitulo 1: Dio el invasor","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2001.mp4","temporada 1","JoJos Bizarre Adventure: Phantom Blood",1);
+        Serie cap2S1= new Serie("Subtitulada al español","Capitulo 2:Una carta del pasado","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2002.mp4","temporada 1","JoJos Bizarre Adventure: Phantom Blood",2);
+        Serie cap3S1= new Serie("Subtitulada al español","Capitulo 3:Juventud con Dio","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2003.mp4","temporada 1","JoJos Bizarre Adventure: Phantom Blood",3);
+        Serie cap4S1= new Serie("Subtitulada al español","Capitulo 4:Overdrive","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2004.mp4","temporada 1","JoJos Bizarre Adventure: Phantom Blood",4);
+        Serie cap5S1= new Serie("Subtitulada al español","Capitulo 5:Los caballeros oscuros","Aventura","David Production","https://storage.googleapis.com/proven-reality-256313.appspot.com/Jojotos%20Part%201%20-%2005.mp4","temporada 1","JoJos Bizarre Adventure: Phantom Blood",5);
         Image caratula5 = new Image("/Recursos/jojophant.jpg");
         Image banner5 = new Image("/Recursos/jojophantb.jpg");
         cap1S1.setImagen(caratula5);
@@ -90,6 +94,11 @@ public class Main extends Application{
         cap1S1.setBanner(banner5);
         cap1S1.setBanner(banner5);
         cap1S1.setBanner(banner5);
+        cap1S1.setTipo("Serie");
+        cap1S1.setTipo("Serie");
+        cap1S1.setTipo("Serie");
+        cap1S1.setTipo("Serie");
+        cap1S1.setTipo("Serie");
         serie1.add(cap1S1);
         serie1.add(cap2S1);
         serie1.add(cap3S1);
@@ -113,6 +122,10 @@ public class Main extends Application{
         cap3S2.setBanner(banner6);
         cap4S2.setBanner(banner6);
         cap5S2.setBanner(banner6);
+        cap2S2.setTipo("Serie");
+        cap2S2.setTipo("Serie");
+        cap2S2.setTipo("Serie");
+        cap2S2.setTipo("Serie");
         serie2.add(cap1S2);
         serie2.add(cap2S2);
         serie2.add(cap3S2);
@@ -149,6 +162,10 @@ public class Main extends Application{
         cancion3.setBanner(banner9);
         cancion4.setImagen(caratula10);
         cancion4.setBanner(banner10);
+        cancion1.setTipo("Cancion");
+        cancion2.setTipo("Cancion");
+        cancion3.setTipo("Cancion");
+        cancion4.setTipo("Cancion");
         canciones.add(cancion1);
         canciones.add(cancion2);
         canciones.add(cancion3);

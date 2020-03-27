@@ -27,6 +27,7 @@ public class Serie extends Multimedia{
     int numeroCap;
     Image imagen;
     Image banner;
+    String tipo;
 
     
     public Serie( String sub, String Ncapitulo, String genero, String autor,String link,String temporada, String nombre,int numeroCap){
@@ -37,6 +38,15 @@ public class Serie extends Multimedia{
         this.link=link;
         this.numeroCap=numeroCap;
     }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    
 
     public Image getBanner() {
         return banner;

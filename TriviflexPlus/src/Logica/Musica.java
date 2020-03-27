@@ -16,12 +16,22 @@ public class Musica extends Multimedia{
     String link;
     Image imagen;
     Image banner;
+    String tipo;
     public Musica(String nombre, String genero, String autor, String duracion, String link) {
         super(nombre, genero, autor);
         this.duracion = duracion;
         this.link=link;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    
+    
     public Image getImagen() {
         return imagen;
     }
