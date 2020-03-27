@@ -5,6 +5,7 @@
  */
 package Principal;
 
+import com.sun.javafx.scene.control.behavior.PasswordFieldBehavior;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
@@ -19,6 +20,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -39,8 +41,8 @@ public class Contr_iniciofx implements Initializable  {
     private Button Nuser;
     @FXML
     private TextField nombre;
-    @FXML
-    private TextField pass;
+     @FXML
+    private PasswordField pass;
      
      
      
