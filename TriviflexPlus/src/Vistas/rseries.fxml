@@ -95,11 +95,6 @@
                   </Label>
                </children>
             </Pane>
-            <Pane layoutX="65.0" layoutY="113.0" prefHeight="133.0" prefWidth="149.0" style="-fx-background-color: white;">
-               <children>
-                  <ImageView fx:id="portSerie" fitHeight="133.0" fitWidth="151.0" layoutX="-2.0" pickOnBounds="true" />
-               </children>
-            </Pane>
             <Pane layoutY="-5.0" prefHeight="84.0" prefWidth="1020.0" style="-fx-background-color: black; -fx-border-color: Black;">
                <children>
                   <Button fx:id="b5" layoutX="856.0" layoutY="25.0" mnemonicParsing="false" onAction="#buscar" prefHeight="45.0" prefWidth="45.0">
@@ -116,7 +111,7 @@
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Button>
-                  <TextField layoutX="695.0" layoutY="25.0" prefHeight="45.0" prefWidth="149.0" promptText="buscar">
+                  <TextField fx:id="buscar" layoutX="695.0" layoutY="25.0" prefHeight="45.0" prefWidth="149.0" promptText="buscar">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
@@ -126,12 +121,12 @@
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="b3" layoutX="442.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Series" textFill="WHITE">
+                  <Button fx:id="b3" layoutX="442.0" layoutY="25.0" mnemonicParsing="false" onAction="#series" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Series" textFill="WHITE">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="b2" layoutX="340.0" layoutY="25.0" mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Peliculas" textFill="WHITE">
+                  <Button fx:id="b2" layoutX="340.0" layoutY="25.0" mnemonicParsing="false" onAction="#peliculas" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: A41E2D; -fx-border-color: fdbe20;" text="Peliculas" textFill="WHITE">
                      <font>
                         <Font name="Oswald Regular" size="12.0" />
                      </font>
@@ -197,7 +192,7 @@
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Button>
-            <ImageView fx:id="caratula" fitHeight="133.0" fitWidth="90.0" layoutX="124.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="caratula" fitHeight="133.0" fitWidth="90.0" layoutX="130.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </Pane>
       <ImageView fitHeight="147.0" fitWidth="235.0" layoutX="15.0" layoutY="-21.0" pickOnBounds="true">

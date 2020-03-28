@@ -149,11 +149,11 @@ public class Main extends Application{
         Image caratula7 = new Image("/Recursos/Megalovania.jpg");
         Image banner7 = new Image("/Recursos/undertalee.jpg");
         Image caratula8 = new Image("/Recursos/green.jpg");
-        Image banner8 = new Image("/Recursos/green.jpg");
+        Image banner8 = new Image("/Recursos/greenb.jpg");
         Image caratula9 = new Image("/Recursos/plant.jpg");
-        Image banner9 = new Image("/Recursos/plant.jpg");
+        Image banner9 = new Image("/Recursos/chemical.jpg");
         Image caratula10 = new Image("/Recursos/gerudo.jpg");
-        Image banner10 = new Image("/Recursos/gerudo.jpg");
+        Image banner10 = new Image("/Recursos/gerudob.jpg");
         cancion1.setImagen(caratula7);
         cancion1.setBanner(banner7);
         cancion2.setImagen(caratula8);

@@ -5,9 +5,14 @@
  */
 package Principal;
 
+import Logica.Musica;
+import Logica.Pelicula;
+import Logica.Serie;
+import static Principal.Contr_busqueda.peliculaObservable;
 import static Principal.Contr_peliculas.nombrePeli;
 import static Principal.Contr_series.nombreSerie;
 import static Principal.Contr_series.numeroCapitulo;
+import static Principal.Main.canciones;
 import static Principal.Main.peliculas;
 import static Principal.Main.serie1;
 import static Principal.Main.serie2;
@@ -21,6 +26,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -45,6 +51,8 @@ public class Contr_rseries implements Initializable{
     private Button bpause1;
     @FXML
     private ImageView caratula;
+    @FXML
+    private TextField buscar;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         if(nombreSerie==serie1.get(0).getNombre()){
@@ -63,6 +71,7 @@ public class Contr_rseries implements Initializable{
                     Ngen.setText(serie1.get(i).getGenero());
                     sub.setText(serie1.get(i).getSub());
                     caratula.setImage(serie1.get(i).getImagen());
+                    
                 }
             }
         }else{
@@ -80,6 +89,7 @@ public class Contr_rseries implements Initializable{
                     Npro.setText(serie2.get(i).getAutor());
                     Ngen.setText(serie2.get(i).getGenero());
                     sub.setText(serie2.get(i).getSub());
+                    caratula.setImage(serie2.get(i).getImagen());
                 }else{
                     System.out.println("Error");
                 }
@@ -330,8 +340,6 @@ public class Contr_rseries implements Initializable{
     @FXML
     private ImageView imgcap4;
     @FXML
-    private ImageView portSerie;
-    @FXML
     private Slider volumeSlide;
     
     @FXML
@@ -347,13 +355,79 @@ public class Contr_rseries implements Initializable{
             player.stop();
         }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/busqueda.fxml"));
+       
+        
+        String eu =buscar.getText();
+        
+        for (int i = 0; i < peliculas.size(); i++) {
+            String buscarr = peliculas.get(i).getNombre();
+            String[] palabras1 = buscarr.split("\\s+");
+            for ( String palabra : palabras1){
+                if (eu.contains(palabra)) {
+                    Pelicula song = peliculas.get(i);
+                    System.out.println("Encontrado en peliculas");
+                    System.out.println(palabra);
+                    peliculaObservable.add(song);
+                    
+                    
+                }
+            }
+        }
+        
+        for (int i = 0; i < serie1.size(); i++) {
+            String buscarr = serie1.get(i).getNombre();
+            String[] palabras1 = buscarr.split("\\s+");
+            for ( String palabra : palabras1){
+                if (eu.contains(palabra)) {
+                    Serie song = serie1.get(i);
+                    System.out.println("Encontrado en series1");
+                    System.out.println(palabra);
+                    peliculaObservable.add(song);
+                    
+                }
+            }
+        }
+        
+        for (int i = 0; i < serie2.size(); i++) {
+            String buscarr = serie2.get(i).getNombre();
+            String[] palabras1 = buscarr.split("\\s+");
+            for ( String palabra : palabras1){
+                if (eu.contains(palabra)) {
+                    Serie song = serie2.get(i);
+                    System.out.println("Encontrado en series1");
+                    System.out.println(palabra);
+                    peliculaObservable.add(song);
+                    
+                }
+            }
+        }
+        
+        for (int i = 0; i < canciones.size(); i++) {
+            String buscarr = canciones.get(i).getNombre();
+            String[] palabras1 = buscarr.split("\\s+");
+            for ( String palabra : palabras1){
+                if (eu.contains(palabra)) {
+                    Musica song = canciones.get(i);
+                    System.out.println("Encontrado en canciones");
+                    peliculaObservable.add(song);
+
+                    
+                    
+                }
+            }
+        }
+        
+        
+    
     }
+    @FXML
     public void peliculas(){
         if(player.getStatus()==PLAYING){
             player.stop();
         }
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/peliculas.fxml"));
     }
+    @FXML
     public void series(){
         if(player.getStatus()==PLAYING){
             player.stop();

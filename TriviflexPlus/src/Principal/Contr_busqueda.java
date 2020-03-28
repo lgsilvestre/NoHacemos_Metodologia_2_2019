@@ -16,6 +16,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -47,7 +48,7 @@ public class Contr_busqueda implements Initializable{
     @FXML
     private TextField textfield;
     
-    public ObservableList<Object> peliculaObservable = FXCollections.observableArrayList();
+    public static ObservableList<Object> peliculaObservable = FXCollections.observableArrayList();
 
     @FXML
     private TableView<Object> peliculast;
@@ -62,24 +63,16 @@ public class Contr_busqueda implements Initializable{
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        //peliculaObservable.clear();
+        
         peliculast.setEditable(true);
         nombre.setCellValueFactory(new PropertyValueFactory<>("Nombre"));
         tipo.setCellValueFactory(new PropertyValueFactory<>("Tipo"));
-        peliculaObservable.add(serie1.get(0));
-        peliculaObservable.add(serie2.get(1));
-        peliculaObservable.add(peliculas.get(0));
-        peliculaObservable.add(peliculas.get(1));
-        peliculaObservable.add(peliculas.get(2));
-        if (peliculaObservable.size()==6) {
-            System.out.println(peliculaObservable.get(5).toString());
-        }
         
         peliculast.setItems(peliculaObservable);
-        
-        
+
         
         textfield.setText("");
+        peliculaObservable.clear();
     }
     @FXML
     public void volver(){
@@ -88,7 +81,7 @@ public class Contr_busqueda implements Initializable{
     @FXML
     public void buscar(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/busqueda.fxml"));
-
+        
         String eu =textfield.getText();
         
         for (int i = 0; i < peliculas.size(); i++) {
@@ -96,8 +89,10 @@ public class Contr_busqueda implements Initializable{
             String[] palabras1 = buscarr.split("\\s+");
             for ( String palabra : palabras1){
                 if (eu.contains(palabra)) {
+                    Pelicula song = peliculas.get(i);
                     System.out.println("Encontrado en peliculas");
                     System.out.println(palabra);
+                    peliculaObservable.add(song);
                     
                     
                 }
@@ -109,8 +104,10 @@ public class Contr_busqueda implements Initializable{
             String[] palabras1 = buscarr.split("\\s+");
             for ( String palabra : palabras1){
                 if (eu.contains(palabra)) {
+                    Serie song = serie1.get(i);
                     System.out.println("Encontrado en series1");
                     System.out.println(palabra);
+                    peliculaObservable.add(song);
                     
                 }
             }
@@ -121,8 +118,10 @@ public class Contr_busqueda implements Initializable{
             String[] palabras1 = buscarr.split("\\s+");
             for ( String palabra : palabras1){
                 if (eu.contains(palabra)) {
+                    Serie song = serie2.get(i);
                     System.out.println("Encontrado en series1");
                     System.out.println(palabra);
+                    peliculaObservable.add(song);
                     
                 }
             }
@@ -136,14 +135,18 @@ public class Contr_busqueda implements Initializable{
                     Musica song = canciones.get(i);
                     System.out.println("Encontrado en canciones");
                     peliculaObservable.add(song);
-                    System.out.println(palabra);
-                    System.out.println(song.getNombre());
-                    System.out.println(song.getDuracion());
+
                     
                     
                 }
             }
         }
+        
+        
+        peliculast.setItems(peliculaObservable);
+        
+        System.out.println(peliculast.getItems().size());
+        
     }
     @FXML
     public void peliculas(){
@@ -157,6 +160,11 @@ public class Contr_busqueda implements Initializable{
     public void musica(){
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/musica.fxml"));
     }   
+    
+    public void repro(ActionEvent e){
+        //Musica pelicula = (Musica) peliculast.getItems();
+        //System.out.println(pelicula);
+    }  
     
     /**
      * TDO
