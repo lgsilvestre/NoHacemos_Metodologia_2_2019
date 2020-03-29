@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="root" prefHeight="630.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_rseries">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="630.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_rseries">
    <children>
       <Pane layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1020.0" style="-fx-background-color: fdbe20;">
          <children>
@@ -135,20 +135,20 @@
             </Pane>
             <Pane fx:id="paneC1" layoutX="722.0" layoutY="259.0" onMouseClicked="#series1" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;">
                <children>
-                  <ImageView fx:id="imgcap1" fitHeight="73.0" fitWidth="117.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imgcap1" fitHeight="73.0" fitWidth="120.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
                </children></Pane>
             <Pane fx:id="paneC2" layoutX="722.0" layoutY="345.0" onMouseClicked="#series2" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;">
                <children>
-                  <ImageView fx:id="imgcap2" fitHeight="73.0" fitWidth="117.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imgcap2" fitHeight="73.0" fitWidth="120.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
                </children></Pane>
             <Pane fx:id="paneC3" layoutX="725.0" layoutY="431.0" onMouseClicked="#series3" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;">
                <children>
-                  <ImageView fx:id="imgcap3" fitHeight="73.0" fitWidth="117.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imgcap3" fitHeight="73.0" fitWidth="120.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
                </children></Pane>
             <MediaView fx:id="view" fitHeight="340.0" fitWidth="640.0" layoutX="39.0" layoutY="265.0" />
             <Pane fx:id="paneC4" layoutX="727.0" layoutY="519.0" onMouseClicked="#series4" prefHeight="73.0" prefWidth="111.0" style="-fx-background-color: black;">
                <children>
-                  <ImageView fx:id="imgcap4" fitHeight="73.0" fitWidth="117.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imgcap4" fitHeight="73.0" fitWidth="120.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
                </children></Pane>
             <Pane layoutX="99.0" layoutY="616.0" prefHeight="30.0" prefWidth="557.0" style="-fx-background-color: gray;">
                <children>
@@ -157,15 +157,29 @@
                   <Label fx:id="minD" layoutY="6.0" prefHeight="17.0" prefWidth="36.0" />
                </children>
             </Pane>
-            <Button fx:id="bplay" layoutX="9.0" layoutY="619.0" mnemonicParsing="false" onAction="#play" text="Play">
+            <Button fx:id="bplay" layoutX="26.0" layoutY="616.0" mnemonicParsing="false" onAction="#play" prefHeight="30.0" prefWidth="24.0">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="16.0">
+                     <image>
+                        <Image url="@../Recursos/play.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
-            <Button fx:id="bstop" layoutX="660.0" layoutY="618.0" mnemonicParsing="false" onAction="#stop" text="Stop">
+            <Button fx:id="bstop" layoutX="656.0" layoutY="616.0" mnemonicParsing="false" onAction="#stop">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="23.0">
+                     <image>
+                        <Image url="@../Recursos/stop.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
             <Label fx:id="Ncap1" layoutX="843.0" layoutY="287.0" prefHeight="23.0" prefWidth="160.0">
                <font>
@@ -187,10 +201,17 @@
                   <Font name="Oswald Regular" size="12.0" />
                </font>
             </Label>
-            <Button fx:id="bpause1" layoutX="45.0" layoutY="618.0" mnemonicParsing="false" onMouseClicked="#pause" prefHeight="27.0" prefWidth="50.0" text="Pause">
+            <Button fx:id="bpause1" layoutX="58.0" layoutY="616.0" mnemonicParsing="false" onMouseClicked="#pause" prefHeight="30.0" prefWidth="40.0">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@../Recursos/pause.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
             <ImageView fx:id="caratula" fitHeight="133.0" fitWidth="90.0" layoutX="130.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
          </children>

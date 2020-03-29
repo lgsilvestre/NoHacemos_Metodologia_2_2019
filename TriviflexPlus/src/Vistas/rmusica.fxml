@@ -12,16 +12,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_rmusica">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Contr_rmusica">
    <children>
       <Pane layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="921.0" style="-fx-background-color: fdbe20;">
          <children>
             <ImageView fx:id="caratula" fitHeight="466.0" fitWidth="758.0" layoutX="55.0" layoutY="107.0" pickOnBounds="true" />
             <MediaView fitHeight="200.0" fitWidth="200.0" layoutX="343.0" layoutY="177.0" />
-            <Button fx:id="bplay" layoutX="56.0" layoutY="597.0" mnemonicParsing="false" onAction="#play" text="Play">
+            <Button fx:id="bplay" layoutX="70.0" layoutY="598.0" mnemonicParsing="false" onAction="#play">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="21.0">
+                     <image>
+                        <Image url="@../Recursos/play.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
             <Pane layoutX="144.0" layoutY="597.0" prefHeight="25.0" prefWidth="573.0" style="-fx-background-color: gray;">
                <children>
@@ -29,16 +36,30 @@
                   <Label fx:id="maxD" layoutX="532.0" layoutY="4.0" prefHeight="17.0" prefWidth="36.0" />
                </children>
             </Pane>
-            <Button fx:id="bstop" layoutX="717.0" layoutY="597.0" mnemonicParsing="false" onAction="#stop" text="Stop">
+            <Button fx:id="bstop" layoutX="717.0" layoutY="596.0" mnemonicParsing="false" onAction="#stop">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="21.0">
+                     <image>
+                        <Image url="@../Recursos/stop.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
             <Slider fx:id="slide" layoutX="194.0" layoutY="601.0" prefHeight="17.0" prefWidth="480.0" />
-            <Button fx:id="bpause" layoutX="94.0" layoutY="597.0" mnemonicParsing="false" onMouseClicked="#pause" prefHeight="17.0" prefWidth="50.0" text="Pause">
+            <Button fx:id="bpause" layoutX="107.0" layoutY="598.0" mnemonicParsing="false" onMouseClicked="#pause" prefHeight="27.0" prefWidth="37.0">
                <font>
                   <Font name="Oswald Regular" size="12.0" />
                </font>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="19.0">
+                     <image>
+                        <Image url="@../Recursos/pause.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
             <Pane layoutX="773.0" layoutY="579.0" prefHeight="45.0" prefWidth="134.0" style="-fx-background-color: gray;">
                <children>
