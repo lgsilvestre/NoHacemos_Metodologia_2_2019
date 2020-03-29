@@ -101,10 +101,10 @@ public class Contr_musica implements Initializable {
         SceneHandler.cargarVista(root, getClass().getResource("/Vistas/busqueda.fxml"));
        
         
-        String eu =buscar.getText();
+        String eu =buscar.getText().toLowerCase();
         
         for (int i = 0; i < peliculas.size(); i++) {
-            String buscarr = peliculas.get(i).getNombre();
+            String buscarr = peliculas.get(i).getNombre().toLowerCase();
             String[] palabras1 = buscarr.split("\\s+");
             for ( String palabra : palabras1){
                 if (eu.contains(palabra)) {
@@ -119,7 +119,7 @@ public class Contr_musica implements Initializable {
         }
         
         for (int i = 0; i < serie1.size(); i++) {
-            String buscarr = serie1.get(i).getNombre();
+            String buscarr = serie1.get(i).getNombre().toLowerCase();
             String[] palabras1 = buscarr.split("\\s+");
             for ( String palabra : palabras1){
                 if (eu.contains(palabra)) {
@@ -133,7 +133,7 @@ public class Contr_musica implements Initializable {
         }
         
         for (int i = 0; i < serie2.size(); i++) {
-            String buscarr = serie2.get(i).getNombre();
+            String buscarr = serie2.get(i).getNombre().toLowerCase();
             String[] palabras1 = buscarr.split("\\s+");
             for ( String palabra : palabras1){
                 if (eu.contains(palabra)) {
@@ -147,7 +147,7 @@ public class Contr_musica implements Initializable {
         }
         
         for (int i = 0; i < canciones.size(); i++) {
-            String buscarr = canciones.get(i).getNombre();
+            String buscarr = canciones.get(i).getNombre().toLowerCase();
             String[] palabras1 = buscarr.split("\\s+");
             for ( String palabra : palabras1){
                 if (eu.contains(palabra)) {

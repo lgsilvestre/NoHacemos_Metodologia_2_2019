@@ -24,10 +24,10 @@
                   </Text>
                </children>
             </Pane>
-            <TableView fx:id="peliculast" layoutX="99.0" layoutY="274.0" prefHeight="376.0" prefWidth="717.0" style="-fx-background-color: black;">
+            <TableView fx:id="peliculast" layoutX="99.0" layoutY="274.0" prefHeight="376.0" prefWidth="717.0" style="-fx-background-color: A41E2D; -fx-text-fill: white;">
                <columns>
-                  <TableColumn fx:id="nombre" prefWidth="349.0" style="-fx-background-color: white; -fx-border-color: A41E2D;" text="Nombre" />
-                  <TableColumn fx:id="tipo" prefWidth="367.0" sortType="DESCENDING" style="-fx-background-color: white; -fx-border-color: A41E2D; -fx-text-color: white;" text="Tipo" />
+                  <TableColumn fx:id="nombre" prefWidth="349.0" text="Nombre" />
+                  <TableColumn fx:id="tipo" prefWidth="367.0" sortType="DESCENDING" text="Tipo" />
                </columns>
             </TableView>
             <Pane prefHeight="84.0" prefWidth="921.0" style="-fx-background-color: black; -fx-border-color: Black;">
