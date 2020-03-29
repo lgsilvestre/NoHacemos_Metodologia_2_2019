@@ -90,8 +90,6 @@ public class Contr_rseries implements Initializable{
                     Ngen.setText(serie2.get(i).getGenero());
                     sub.setText(serie2.get(i).getSub());
                     caratula.setImage(serie2.get(i).getImagen());
-                }else{
-                    System.out.println("Error");
                 }
             }
 
